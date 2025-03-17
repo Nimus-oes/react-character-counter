@@ -1,3 +1,3 @@
 export default function Banner() {
-  return <div>Banner</div>;
+  return <div>Total Characters/Word Count/Sentence Count</div>;
 }

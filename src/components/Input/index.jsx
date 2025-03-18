@@ -1,4 +1,5 @@
 import Options from "./Options";
+import "./input.css";
 
 export default function Input({ onChange }) {
   return (

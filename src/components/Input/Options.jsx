@@ -1,6 +1,6 @@
 export default function Options() {
   return (
-    <div>
+    <div className="options">
       <div>
         <input
           type="checkbox"

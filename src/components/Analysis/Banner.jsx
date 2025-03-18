@@ -1,3 +1,8 @@
 export default function Banner(props) {
-  return <div>{props.title}</div>;
+  return (
+    <div>
+      <div>{props.value}</div>
+      <div>{props.title}</div>
+    </div>
+  );
 }

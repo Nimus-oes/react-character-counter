@@ -2,6 +2,7 @@ import Banner from "./Banner";
 import Density from "./Density";
 import Graph from "./Graph";
 import { countWord, countSentence, getSortedDensity } from "./Helper";
+import "./analysis.css";
 
 export default function Analysis({ inputText }) {
   const banners = [
@@ -21,7 +22,7 @@ export default function Analysis({ inputText }) {
 
   return (
     <section>
-      {bannerList}
+      <div className="banner-container">{bannerList}</div>
       <div>
         <Density inputText={inputText}>{densityGraph}</Density>
       </div>

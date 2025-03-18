@@ -1,7 +1,7 @@
 export default function Graph(props) {
   const bar = "Some bar";
   return (
-    <div>
+    <div className="density-item">
       <div>{props.letter}</div>
       <div>{bar}</div>
       <div>

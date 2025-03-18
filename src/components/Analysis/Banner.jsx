@@ -1,6 +1,6 @@
 export default function Banner(props) {
   return (
-    <div>
+    <div className="banner">
       <div>{props.value}</div>
       <div>{props.title}</div>
     </div>

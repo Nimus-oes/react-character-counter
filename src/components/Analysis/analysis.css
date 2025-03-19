@@ -1,6 +1,26 @@
+.banner-value {
+  font-size: var(--fs-preset-1-m);
+  font-weight: var(--fw-preset-1);
+}
+
+.banner-title {
+  font-size: var(--fs-preset-3);
+  font-weight: var(--fw-preset-3);
+}
+
+.density-title {
+  font-size: var(--fs-preset-2);
+  font-weight: var(--fw-preset-2);
+}
+
 .density-item {
   display: flex;
   justify-content: space-between;
+}
+
+.no-graph {
+  font-size: var(--fs-preset-4);
+  font-weight: var(--fw-preset-4);
 }
 
 @media only screen and (min-width: 768px) {

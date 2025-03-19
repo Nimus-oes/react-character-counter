@@ -3,3 +3,14 @@
   max-width: 990px;
   margin: 0 auto;
 }
+
+.title {
+  font-size: var(--fs-preset-1-m);
+  font-weight: var(--fw-preset-1);
+}
+
+@media only screen and (min-width: 768px) {
+  .title {
+    font-size: var(--fs-preset-1);
+  }
+}

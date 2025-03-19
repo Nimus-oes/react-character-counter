@@ -1,9 +1,31 @@
+:root {
+  --font-primary: "DM Sans", sans-serif;
+  --fs-preset-1: 64px;
+  --fs-preset-1-m: 40px;
+  --fs-preset-2: 24px;
+  --fs-preset-3: 20px;
+  --fs-preset-4: 16px;
+  --fw-preset-1: 700;
+  --fw-preset-2: 600;
+  --fw-preset-3: 400;
+  --fw-preset-4: 400;
+  --lh-preset-1: 100%;
+  --lh-preset-2: 130%;
+  --lh-preset-3: 140%;
+  --lh-preset-4: 130%;
+  --ls-preset-1: -1px;
+  --ls-preset-2: -1px;
+  --ls-preset-3: -0.6px;
+  --ls-preset-4: -0.6px;
+}
+
 * {
   border: 1px solid black;
 }
 
 body {
   width: 100vw;
+  font-family: var(--font-primary);
 }
 
 *,
@@ -11,4 +33,8 @@ body {
 *::after {
   box-sizing: border-box;
   margin: 0;
+}
+
+input {
+  font: inherit;
 }

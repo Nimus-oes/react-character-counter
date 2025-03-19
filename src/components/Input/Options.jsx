@@ -5,6 +5,7 @@ export default function Options() {
         <div>
           <input
             type="checkbox"
+            name="no-space-option"
             aria-label="A checkbox for Exclude Spaces feature"
           />
           Exclude Spaces
@@ -12,6 +13,7 @@ export default function Options() {
         <div>
           <input
             type="checkbox"
+            name="limit-option"
             aria-label="A checkbox for Set Character Limit feature"
           />
           Set Character Limit

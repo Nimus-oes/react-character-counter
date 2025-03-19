@@ -1,7 +1,7 @@
 import Options from "./Options";
 import "./input.css";
 
-export default function Input({ onChange }) {
+export default function Input({ onChang }) {
   return (
     <section>
       <textarea

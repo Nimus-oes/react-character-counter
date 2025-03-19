@@ -3,14 +3,14 @@ import "./input.css";
 
 export default function Input({ onChange }) {
   return (
-    <section className="content-box">
-      <input
+    <section>
+      <textarea
         className="input"
-        type="text"
-        aria-label="text-input-field"
+        name="input"
+        aria-label="An input field to provide text to analyze"
         placeholder="Start typing or paste your text here"
         onChange={onChange}
-      />
+      ></textarea>
       <Options />
     </section>
   );

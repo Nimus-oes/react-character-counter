@@ -3,7 +3,7 @@ import "./input.css";
 
 export default function Input({ onChange }) {
   return (
-    <section>
+    <section className="content-box">
       <input
         className="input"
         type="text"

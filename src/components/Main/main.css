@@ -7,6 +7,9 @@
 .title {
   font-size: var(--fs-preset-1-m);
   font-weight: var(--fw-preset-1);
+  max-width: 510px;
+  text-align: center;
+  margin: 0 auto;
 }
 
 @media only screen and (min-width: 768px) {

@@ -1,3 +1,10 @@
+.banner-item {
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .banner-value {
   font-size: var(--fs-preset-1-m);
   font-weight: var(--fw-preset-1);
@@ -16,6 +23,9 @@
 .density-item {
   display: flex;
   justify-content: space-between;
+  font-size: var(--fs-preset-4);
+  font-weight: var(--fw-preset-4);
+  gap: 14px;
 }
 
 .no-graph {
@@ -23,8 +33,37 @@
   font-weight: var(--fw-preset-4);
 }
 
+.letter {
+  flex-basis: 4%;
+}
+
+.bar {
+  flex-basis: 68%;
+}
+
+.percentage {
+  flex-basis: 21%;
+  text-align: right;
+}
+
 @media only screen and (min-width: 768px) {
   .banner-container {
     display: flex;
+  }
+
+  .banner-item {
+    flex-grow: 1;
+  }
+
+  .letter {
+    flex-basis: 2%;
+  }
+
+  .bar {
+    flex-basis: 85%;
+  }
+
+  .percentage {
+    flex-basis: 9%;
   }
 }

@@ -1,3 +1,7 @@
+function noSpaceTotalChars(text) {
+  return text.split(" ").join("").length;
+}
+
 function countWord(text) {
   return text.length !== 0 ? text.split(" ").length : 0;
 }
@@ -33,4 +37,4 @@ function getSortedDensity(text, minThreshold) {
   return rangedDensity;
 }
 
-export { countWord, countSentence, getSortedDensity };
+export { noSpaceTotalChars, countWord, countSentence, getSortedDensity };

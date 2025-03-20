@@ -2,6 +2,9 @@ import Density from "../ui/Density";
 import { getSortedDensity } from "../../utils/textUtils";
 
 export default function DensityAnalyzer({ data }) {
+  if (!data.userinput) {
+    return <p>No characters found. Start typing to see letter density.</p>;
+  }
   const density = getSortedDensity(data.userinput, 1);
   let id = 0;
   const densityList = density.map((item) => (

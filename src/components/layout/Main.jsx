@@ -12,8 +12,10 @@ export default function Main() {
 
   return (
     <main>
+      <h1>Analyze your text in real-time.</h1>
       <InputReceiver data={data} setData={setData} />
       <BannerLister data={data} />
+      <h3>Letter Density</h3>
       <DensityAnalyzer data={data} />
     </main>
   );

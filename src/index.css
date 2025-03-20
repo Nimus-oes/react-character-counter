@@ -1,22 +1,22 @@
 :root {
   --font-primary: "DM Sans", sans-serif;
-  --fs-preset-1: 64px;
-  --fs-preset-1-m: 40px;
-  --fs-preset-2: 24px;
-  --fs-preset-3: 20px;
-  --fs-preset-4: 16px;
-  --fw-preset-1: 700;
-  --fw-preset-2: 600;
-  --fw-preset-3: 400;
-  --fw-preset-4: 400;
-  --lh-preset-1: 100%;
-  --lh-preset-2: 130%;
-  --lh-preset-3: 140%;
-  --lh-preset-4: 130%;
-  --ls-preset-1: -1px;
-  --ls-preset-2: -1px;
-  --ls-preset-3: -0.6px;
-  --ls-preset-4: -0.6px;
+  --fs-1: 64px;
+  --fs-1-m: 40px;
+  --fs-2: 24px;
+  --fs-3: 20px;
+  --fs-4: 16px;
+  --fw-1: 700;
+  --fw-2: 600;
+  --fw-3: 400;
+  --fw-4: 400;
+  --lh-1: 100%;
+  --lh-2: 130%;
+  --lh-3: 140%;
+  --lh-4: 130%;
+  --ls-1: -1px;
+  --ls-2: -1px;
+  --ls-3: -0.6px;
+  --ls-4: -0.6px;
 }
 
 * {

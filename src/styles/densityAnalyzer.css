@@ -1,0 +1,7 @@
+.density-item {
+  display: flex;
+}
+
+.item-category {
+  flex-grow: 1;
+}

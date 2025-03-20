@@ -1,0 +1,9 @@
+@media only screen and (min-width: 990px) {
+  .banner-list {
+    display: flex;
+  }
+
+  .banner-item {
+    flex-grow: 1;
+  }
+}

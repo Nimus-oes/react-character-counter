@@ -2,6 +2,7 @@ import { useState } from "react";
 import InputReceiver from "../feature/InputReceiver";
 import BannerLister from "../feature/BannerLister";
 import DensityAnalyzer from "../feature/DensityAnalyzer";
+import "../../styles/main.css";
 
 export default function Main() {
   const [data, setData] = useState({
@@ -12,8 +13,8 @@ export default function Main() {
   });
 
   return (
-    <main>
-      <h1>Analyze your text in real-time.</h1>
+    <main className="main">
+      <h1 className="title">Analyze your text in real-time.</h1>
       <InputReceiver data={data} setData={setData} />
       <BannerLister data={data} />
       <h3>Letter Density</h3>

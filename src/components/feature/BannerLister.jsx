@@ -4,6 +4,7 @@ import {
   countWord,
   countSentence,
 } from "../../utils/textUtils";
+import "../../styles/bannerList.css";
 
 export default function BannerLister({ data }) {
   const text = data.userinput;
@@ -28,5 +29,5 @@ export default function BannerLister({ data }) {
     <Banner key={idval++} label={banner.label} count={banner.calc()} />
   ));
 
-  return <div>{bannerList}</div>;
+  return <div className="banner-list">{bannerList}</div>;
 }

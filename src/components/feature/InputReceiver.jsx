@@ -3,6 +3,7 @@ import Inputbox from "../ui/Inputbox";
 import Option from "../ui/Option.JSX";
 import Timer from "../ui/Timer";
 import { getReadingTime } from "../../utils/textUtils";
+import "../../styles/inputReceiver.css";
 
 export default function InputReceiver({ data, setData }) {
   const setInput = (e) => {
@@ -28,20 +29,22 @@ export default function InputReceiver({ data, setData }) {
       <div>
         <Textbox handleChange={setInput} maxLength={data.maxLength} />
       </div>
-      <div>
-        <Option
-          name="nospace"
-          id="nospace"
-          label="Exlcude Spaces"
-          handleChange={setSpace}
-        />
-        <Option
-          name="limit"
-          id="limit"
-          label="Set Character Limit"
-          handleChange={setLimit}
-        />
-        {data.limit && <Inputbox handleChange={setMaxLength} />}
+      <div className="sub-input">
+        <div className="options">
+          <Option
+            name="nospace"
+            id="nospace"
+            label="Exlcude Spaces"
+            handleChange={setSpace}
+          />
+          <Option
+            name="limit"
+            id="limit"
+            label="Set Character Limit"
+            handleChange={setLimit}
+          />
+          {data.limit && <Inputbox handleChange={setMaxLength} />}
+        </div>
         <Timer readingTime={readingTime} />
       </div>
     </section>

@@ -1,5 +1,6 @@
 import Density from "../ui/Density";
 import { getSortedDensity } from "../../utils/textUtils";
+import "../../styles/densityAnalyzer.css";
 
 export default function DensityAnalyzer({ data }) {
   if (!data.userinput) {

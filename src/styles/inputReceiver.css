@@ -1,0 +1,26 @@
+.textbox {
+  width: 100%;
+  height: 200px;
+  resize: none;
+}
+
+.sub-input,
+.options {
+  display: flex;
+  flex-direction: column;
+}
+
+.option-item {
+  display: flex;
+}
+
+@media only screen and (min-width: 990px) {
+  .sub-input,
+  .options {
+    flex-direction: row;
+  }
+
+  .sub-input {
+    justify-content: space-between;
+  }
+}

@@ -1,7 +1,8 @@
-export default function Banner() {
+export default function Banner({ count, label }) {
   return (
     <div>
-      <div>Banner</div>
+      <div>{count}</div>
+      <div>{label}</div>
     </div>
   );
 }

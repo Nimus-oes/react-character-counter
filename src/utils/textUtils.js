@@ -7,7 +7,14 @@ function countWord(text) {
 }
 
 function countSentence(text) {
-  return text.length !== 0 ? text.split(".").length : 0;
+  const splitByDot = text.split(".").length;
+  if (text.length && splitByDot <= 2) {
+    return 1;
+  } else {
+    return text.split(".").length - 1;
+  }
+
+  //   return text.length !== 0 ? text.split(".").length - 1 : 0;
 }
 
 function countEachChar(text) {

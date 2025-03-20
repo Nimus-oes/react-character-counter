@@ -1,10 +1,9 @@
-import ModeChanger from "../feature/ModeChanger";
+import ThemeChanger from "../feature/ThemeChanger";
 
 export default function Header() {
   return (
     <header>
-      <div>Logo</div>
-      <ModeChanger />
+      <ThemeChanger />
     </header>
   );
 }

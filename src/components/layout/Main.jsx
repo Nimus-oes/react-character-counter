@@ -8,6 +8,7 @@ export default function Main() {
     userinput: "",
     nospace: false,
     limit: false,
+    maxLength: null,
   });
 
   return (

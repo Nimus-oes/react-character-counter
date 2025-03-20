@@ -1,14 +1,8 @@
-export default function Option({ name, id, label, value, handleChange }) {
+export default function Option({ name, id, label, handleChange }) {
   return (
-    <div>
-      <input
-        type="checkbox"
-        name={name}
-        id={id}
-        value={value}
-        onChange={handleChange}
-      />{" "}
+    <>
+      <input type="checkbox" name={name} id={id} onChange={handleChange} />{" "}
       {label}
-    </div>
+    </>
   );
 }

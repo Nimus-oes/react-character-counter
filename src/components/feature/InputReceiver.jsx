@@ -1,16 +1,24 @@
-import Input from "../ui/Input";
+import Textbox from "../ui/Textbox";
+import Inputbox from "../ui/Inputbox";
 import Option from "../ui/Option.JSX";
 import Timer from "../ui/Timer";
 import { getReadingTime } from "../../utils/textUtils";
 
 export default function InputReceiver({ data, setData }) {
   const setInput = (e) => {
-    const text = e.target.value;
-    setData({ ...data, userinput: text });
+    setData({ ...data, userinput: e.target.value });
   };
 
-  const setOption = (e) => {
-    setData({ ...data, [e.target.id]: e.target.checked });
+  const setSpace = (e) => {
+    setData({ ...data, nospace: e.target.checked });
+  };
+
+  const setLimit = (e) => {
+    setData({ ...data, limit: e.target.checked, maxLength: null }); // Reset the previous max length to receive a new value or to reset the limit
+  };
+
+  const setMaxLength = (e) => {
+    setData({ ...data, maxLength: e.target.value });
   };
 
   const readingTime = getReadingTime(data.userinput, 200); // Calculate reading time with 200 words per mintue speed
@@ -18,23 +26,22 @@ export default function InputReceiver({ data, setData }) {
   return (
     <section>
       <div>
-        <Input handleChange={setInput} />
+        <Textbox handleChange={setInput} maxLength={data.maxLength} />
       </div>
       <div>
         <Option
           name="nospace"
           id="nospace"
           label="Exlcude Spaces"
-          value="nospace"
-          handleChange={setOption}
+          handleChange={setSpace}
         />
         <Option
           name="limit"
           id="limit"
           label="Set Character Limit"
-          value="limit"
-          handleChange={setOption}
+          handleChange={setLimit}
         />
+        {data.limit && <Inputbox handleChange={setMaxLength} />}
         <Timer readingTime={readingTime} />
       </div>
     </section>

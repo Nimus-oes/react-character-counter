@@ -13,8 +13,6 @@ function countSentence(text) {
   } else {
     return text.split(".").length - 1;
   }
-
-  //   return text.length !== 0 ? text.split(".").length - 1 : 0;
 }
 
 function countEachChar(text) {

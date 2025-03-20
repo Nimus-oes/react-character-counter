@@ -1,6 +1,7 @@
 import { useState } from "react";
 import InputReceiver from "../feature/InputReceiver";
-import TextAnalyzer from "../feature/TextAnalyzer";
+import BannerLister from "../feature/BannerLister";
+import DensityAnalyzer from "../feature/DensityAnalyzer";
 
 export default function Main() {
   const [data, setData] = useState({
@@ -12,7 +13,8 @@ export default function Main() {
   return (
     <main>
       <InputReceiver data={data} setData={setData} />
-      <TextAnalyzer data={data} />
+      <BannerLister data={data} />
+      <DensityAnalyzer data={data} />
     </main>
   );
 }

@@ -28,7 +28,5 @@ export default function BannerLister({ data }) {
     <Banner key={idval++} label={banner.label} count={banner.calc()} />
   ));
 
-  console.log(bannerList);
-
   return <div>{bannerList}</div>;
 }

@@ -7,7 +7,7 @@ export default function Main() {
   const [data, setData] = useState({
     userinput: "",
     nospace: false,
-    limit: 0,
+    limit: false,
   });
 
   return (

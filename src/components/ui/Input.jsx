@@ -1,7 +1,7 @@
-export default function Input() {
+export default function Input({ handleChange }) {
   return (
     <div>
-      <input></input>
+      <input onChange={handleChange}></input>
     </div>
   );
 }

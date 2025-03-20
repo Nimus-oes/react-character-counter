@@ -1,7 +1,7 @@
-export default function TextAnalyzer() {
+export default function TextAnalyzer({ data }) {
   return (
     <div>
-      <div>Text Analysis</div>
+      <h1>{data.userinput}</h1>
     </div>
   );
 }

@@ -1,7 +1,3 @@
-export default function Timer() {
-  return (
-    <div>
-      <div>timer</div>
-    </div>
-  );
+export default function Timer({ readingTime }) {
+  return <div>Approx. reading time: {readingTime} minute</div>;
 }

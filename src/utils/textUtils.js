@@ -37,4 +37,14 @@ function getSortedDensity(text, minThreshold) {
   return rangedDensity;
 }
 
-export { noSpaceTotalChars, countWord, countSentence, getSortedDensity };
+function getReadingTime(text, wordsPerMin) {
+  return Math.ceil(countWord(text) / wordsPerMin);
+}
+
+export {
+  noSpaceTotalChars,
+  countWord,
+  countSentence,
+  getSortedDensity,
+  getReadingTime,
+};

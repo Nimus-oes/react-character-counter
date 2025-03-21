@@ -9,6 +9,11 @@
   margin-bottom: 10px;
 }
 
+.limit-input {
+  width: 55px;
+  height: 23px;
+}
+
 .sub-input,
 .options {
   display: flex;
@@ -24,9 +29,16 @@
   margin-bottom: 40px;
 }
 
-.option-item {
+.option-item,
+.limit-item {
   display: flex;
+  align-items: center;
   gap: 7px;
+}
+
+.option-item,
+.timer-item {
+  height: 23px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -41,6 +53,8 @@
 
   .sub-input {
     justify-content: space-between;
+    align-items: center;
+    height: 30px;
   }
 }
 

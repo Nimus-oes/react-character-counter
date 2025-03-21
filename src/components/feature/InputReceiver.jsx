@@ -37,13 +37,17 @@ export default function InputReceiver({ data, setData }) {
             label="Exlcude Spaces"
             handleChange={setSpace}
           />
-          <Option
-            name="limit"
-            id="limit"
-            label="Set Character Limit"
-            handleChange={setLimit}
-          />
-          {data.limit && <Inputbox handleChange={setMaxLength} />}
+          <div className="limit-item">
+            <Option
+              name="limit"
+              id="limit"
+              label="Set Character Limit"
+              handleChange={setLimit}
+            />
+            {data.limit && (
+              <Inputbox className="limit-input" handleChange={setMaxLength} />
+            )}
+          </div>
         </div>
         <Timer readingTime={readingTime} />
       </div>

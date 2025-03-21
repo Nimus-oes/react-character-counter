@@ -37,5 +37,5 @@ export default function BannerLister({ data }) {
     />
   ));
 
-  return <div className="banner-list">{bannerList}</div>;
+  return <section className="banner-list">{bannerList}</section>;
 }

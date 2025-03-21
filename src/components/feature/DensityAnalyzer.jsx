@@ -19,7 +19,7 @@ export default function DensityAnalyzer({ data }) {
   ));
 
   return (
-    <div>
+    <section className="density">
       <ListCollapsor
         mappedList={densityList}
         threshold={4}
@@ -27,6 +27,6 @@ export default function DensityAnalyzer({ data }) {
         hideLabel="See less"
         labelClass="collapsible-label"
       />
-    </div>
+    </section>
   );
 }

@@ -2,6 +2,18 @@
   display: flex;
 }
 
+.density-item,
+.collapsible-label {
+  font-size: var(--fs-4);
+  font-weight: var(--fw-4);
+  line-height: var(--lh-4);
+  letter-spacing: var(--ls-4);
+}
+
 .item-category {
   flex-grow: 1;
+}
+
+.collapsible-label {
+  margin-top: 16px;
 }

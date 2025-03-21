@@ -17,7 +17,7 @@ export default function Main() {
       <h1 className="title">Analyze your text in real-time.</h1>
       <InputReceiver data={data} setData={setData} />
       <BannerLister data={data} />
-      <h3>Letter Density</h3>
+      <h3 className="density-title">Letter Density</h3>
       <DensityAnalyzer data={data} />
     </main>
   );

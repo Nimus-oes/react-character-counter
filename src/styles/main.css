@@ -6,6 +6,30 @@
 
 .title {
   text-align: center;
-  max-width: 510px;
-  margin: 0 auto;
+  max-width: 530px;
+  margin: 40px auto;
+  font-size: var(--fs-1-m);
+  font-weight: var(--fw-1);
+  letter-spacing: var(--ls-1);
+  line-height: var(--lh-1);
+}
+
+.density-title {
+  font-size: var(--fs-2);
+  font-weight: var(--fw-2);
+  line-height: var(--lh-2);
+  letter-spacing: var(--ls-2);
+  margin-bottom: 16px;
+}
+
+@media only screen and (min-width: 768px) {
+  .title {
+    font-size: var(--fs-1);
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .title {
+    margin: 48px auto;
+  }
 }

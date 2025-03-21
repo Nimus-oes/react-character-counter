@@ -17,6 +17,7 @@ export default function ListCollapsor({
       {isOpen && extraItems}
       {shouldCollapse && (
         <button
+          className="collapsible-label"
           onClick={() => {
             setIsOpen(!isOpen);
           }}

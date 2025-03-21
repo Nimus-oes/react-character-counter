@@ -2,25 +2,50 @@
   width: 100%;
   height: 200px;
   resize: none;
+  font-size: var(--fs-3);
+  font-weight: var(--fw-3);
+  line-height: var(--lh-3);
+  letter-spacing: var(--ls-3);
+  margin-bottom: 10px;
 }
 
 .sub-input,
 .options {
   display: flex;
   flex-direction: column;
+  gap: 12px;
+}
+
+.sub-input {
+  font-size: var(--fs-4);
+  font-weight: var(--fw-4);
+  line-height: var(--lh-4);
+  letter-spacing: var(--ls-4);
+  margin-bottom: 40px;
 }
 
 .option-item {
   display: flex;
+  gap: 7px;
 }
 
-@media only screen and (min-width: 990px) {
+@media only screen and (min-width: 768px) {
   .sub-input,
   .options {
     flex-direction: row;
   }
 
+  .options {
+    gap: 24px;
+  }
+
   .sub-input {
     justify-content: space-between;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .sub-input {
+    margin-bottom: 48px;
   }
 }

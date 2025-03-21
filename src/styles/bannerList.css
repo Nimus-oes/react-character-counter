@@ -11,6 +11,9 @@
   flex-direction: column;
   justify-content: center;
   gap: 8px;
+  background-repeat: no-repeat;
+  background-position: right;
+  padding: 27px 20px;
 }
 
 .banner-count {
@@ -27,6 +30,21 @@
   letter-spacing: var(--ls-3);
 }
 
+.purple-box {
+  background-color: var(--purple-400);
+  background-image: url("src/assets/pattern-character-count.svg");
+}
+
+.yellow-box {
+  background-color: var(--yellow-500);
+  background-image: url("src/assets/pattern-word-count.svg");
+}
+
+.orange-box {
+  background-color: var(--orange-500);
+  background-image: url("src/assets/pattern-sentence-count.svg");
+}
+
 @media only screen and (min-width: 768px) {
   .banner-list {
     flex-direction: row;
@@ -35,6 +53,7 @@
   .banner-item {
     flex-grow: 1;
     height: 150px;
+    padding: 25px 16px;
   }
 
   .banner-count {

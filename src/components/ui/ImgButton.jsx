@@ -1,5 +1,13 @@
-export default function ImgButton({ className, src, alt, handleClick }) {
+export default function ImgButton({
+  boxClass,
+  iconClass,
+  src,
+  alt,
+  handleClick,
+}) {
   return (
-    <img src={src} alt={alt} onClick={handleClick} className={className} />
+    <div className={boxClass}>
+      <img src={src} alt={alt} onClick={handleClick} className={iconClass} />
+    </div>
   );
 }

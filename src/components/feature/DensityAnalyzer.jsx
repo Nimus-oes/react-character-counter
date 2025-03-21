@@ -25,6 +25,7 @@ export default function DensityAnalyzer({ data }) {
         threshold={4}
         showLabel="See more"
         hideLabel="See less"
+        labelClass="collapsible-label"
       />
     </div>
   );

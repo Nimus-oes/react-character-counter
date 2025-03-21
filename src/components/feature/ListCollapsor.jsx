@@ -6,6 +6,7 @@ export default function ListCollapsor({
   threshold,
   showLabel,
   hideLabel,
+  labelClass,
 }) {
   const shouldCollapse = mappedList.length > threshold;
   const [initialItems, extraItems] = cutList(mappedList, threshold);
@@ -17,7 +18,7 @@ export default function ListCollapsor({
       {isOpen && extraItems}
       {shouldCollapse && (
         <button
-          className="collapsible-label"
+          className={labelClass}
           onClick={() => {
             setIsOpen(!isOpen);
           }}

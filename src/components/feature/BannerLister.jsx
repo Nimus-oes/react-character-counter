@@ -12,21 +12,29 @@ export default function BannerLister({ data }) {
     {
       label: "Total Characters",
       calc: () => (data.nospace ? noSpaceTotalChars(text) : text.length),
+      class: "purple-box",
     },
     {
       label: "Word Count",
       calc: () => countWord(text),
+      class: "yellow-box",
     },
     {
       label: "Sentence Count",
       calc: () => countSentence(text),
+      class: "orange-box",
     },
   ];
 
   let idval = 0;
 
   const bannerList = banners.map((banner) => (
-    <Banner key={idval++} label={banner.label} count={banner.calc()} />
+    <Banner
+      key={idval++}
+      label={banner.label}
+      count={banner.calc()}
+      className={banner.class}
+    />
   ));
 
   return <div className="banner-list">{bannerList}</div>;

@@ -15,7 +15,8 @@ export default function ThemeChanger() {
     <>
       <img src={theme.logo} alt={theme.logoalt} className="logo" />
       <ImgButton
-        className="theme-icon"
+        boxClass="theme-icon-box"
+        iconClass="theme-icon"
         src={theme.icon}
         alt={theme.iconalt}
         handleClick={changeTheme}

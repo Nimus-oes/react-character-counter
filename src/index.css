@@ -17,10 +17,22 @@
   --ls-2: -1px;
   --ls-3: -0.6px;
   --ls-4: -0.6px;
+  --neutral-0: RGB(255, 255, 255);
+  --neutral-100: RGB(242, 242, 247);
+  --neutral-200: RGB(228, 228, 239);
+  --neutral-600: RGB(64, 66, 84);
+  --neutral-700: RGB(42, 43, 55);
+  --neutral-800: RGB(33, 34, 44);
+  --neutral-900: RGB(18, 19, 26);
+  --purple-400: RGB(211, 160, 250);
+  --purple-500: RGB(194, 124, 248);
+  --yellow-500: RGB(255, 159, 0);
+  --orange-500: RGB(254, 129, 89);
+  --orange-800: RGB(218, 55, 1);
 }
 
 * {
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 body {

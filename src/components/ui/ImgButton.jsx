@@ -1,7 +1,5 @@
-export default function ImgButton({ src, alt, handleClick }) {
+export default function ImgButton({ className, src, alt, handleClick }) {
   return (
-    <div>
-      <img src={src} alt={alt} onClick={handleClick} />
-    </div>
+    <img src={src} alt={alt} onClick={handleClick} className={className} />
   );
 }

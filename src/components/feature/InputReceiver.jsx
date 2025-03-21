@@ -34,7 +34,7 @@ export default function InputReceiver({ data, setData }) {
           <Option
             name="nospace"
             id="nospace"
-            label="Exlcude Spaces"
+            label="Exclude Spaces"
             handleChange={setSpace}
           />
           <div className="limit-item">

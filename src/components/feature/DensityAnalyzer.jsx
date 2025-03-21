@@ -1,4 +1,5 @@
 import Density from "../ui/Density";
+import ListCollapsor from "./ListCollapsor";
 import { getSortedDensity } from "../../utils/textUtils";
 import "../../styles/densityAnalyzer.css";
 
@@ -17,5 +18,14 @@ export default function DensityAnalyzer({ data }) {
     />
   ));
 
-  return <div>{densityList}</div>;
+  return (
+    <div>
+      <ListCollapsor
+        mappedList={densityList}
+        threshold={4}
+        showLabel="See more"
+        hideLabel="See less"
+      />
+    </div>
+  );
 }

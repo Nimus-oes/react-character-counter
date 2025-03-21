@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Button from "../ui/Button";
+import ImgButton from "../../components/ui/ImgButton.jsx";
 import logoLight from "../../assets/logo-light-theme.svg";
 import logoDark from "../../assets/logo-dark-theme.svg";
 import iconMoon from "../../assets/icon-moon.svg";
@@ -34,7 +34,11 @@ export default function ThemeChanger() {
   return (
     <>
       <img src={theme.logo} alt={theme.logoalt} />
-      <Button src={theme.icon} alt={theme.iconalt} handleClick={changeTheme} />
+      <ImgButton
+        src={theme.icon}
+        alt={theme.iconalt}
+        handleClick={changeTheme}
+      />
     </>
   );
 }

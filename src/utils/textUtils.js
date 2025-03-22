@@ -1,18 +1,22 @@
+function removeSpecialCharsSpaces(text) {
+  return text.replace(/[^\p{L}]/gu, "");
+}
+
 function noSpaceTotalChars(text) {
   return text.split(" ").join("").length;
 }
 
 function countWord(text) {
-  return text.length !== 0 ? text.split(" ").length : 0;
+  const wordList = text.split(" ").filter((item) => item !== "");
+  return wordList.length;
 }
 
 function countSentence(text) {
-  const splitByDot = text.split(".").length;
-  if (text.length && splitByDot <= 2) {
-    return 1;
-  } else {
-    return text.split(".").length - 1;
-  }
+  const sentenceList = text
+    .split(/[.?!]/) // Split by ".", "?", or "!"
+    .map((item) => item.trim())
+    .filter((item) => item !== "");
+  return sentenceList.length;
 }
 
 function countEachChar(text, ignoreCase, displayUpper) {
@@ -40,7 +44,8 @@ function getDensity(text, ignoreCase, displayUpper) {
 }
 
 function getSortedDensity(text, minThreshold, ignoreCase, displayUpper) {
-  const densityCount = getDensity(text, ignoreCase, displayUpper);
+  const clearedText = removeSpecialCharsSpaces(text);
+  const densityCount = getDensity(clearedText, ignoreCase, displayUpper);
   densityCount.sort((a, b) => b[2] - a[2]);
   const rangedDensity = densityCount.filter((item) => item[2] >= minThreshold);
   return rangedDensity;

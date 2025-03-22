@@ -16,6 +16,9 @@
 .limit-input {
   width: 55px;
   height: 23px;
+  background-color: transparent;
+  border: 1px solid var(--neutral-600);
+  color: var(--neutral-0);
 }
 
 .sub-input,

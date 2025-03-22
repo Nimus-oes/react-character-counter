@@ -14,13 +14,13 @@
 }
 
 .collapsible-label {
-  all: initial;
   margin-top: 16px;
   background: none;
   font-size: var(--fs-3);
   font-weight: var(--fw-3);
   line-height: var(--lh-3);
   letter-spacing: var(--ls-3);
+  border: none;
 }
 
 .density-content,

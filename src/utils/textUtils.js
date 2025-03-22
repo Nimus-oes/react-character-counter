@@ -15,17 +15,21 @@ function countSentence(text) {
   }
 }
 
-function countEachChar(text) {
+function countEachChar(text, ignoreCase, displayUpper) {
   const counter = {};
   const chars = text.split("");
   chars.forEach((char) => {
-    counter[char] ? (counter[char] += 1) : (counter[char] = 1);
+    let casedChar = char;
+    if (ignoreCase) {
+      casedChar = displayUpper ? char.toUpperCase() : char.toLowerCase();
+    }
+    counter[casedChar] ? (counter[casedChar] += 1) : (counter[casedChar] = 1);
   });
   return new Map(Object.entries(counter));
 }
 
-function getDensity(text) {
-  const charCount = countEachChar(text);
+function getDensity(text, ignoreCase, displayUpper) {
+  const charCount = countEachChar(text, ignoreCase, displayUpper);
   const densityCount = [];
   charCount.forEach((count, char) => {
     const density = (count / text.length) * 100;
@@ -35,8 +39,8 @@ function getDensity(text) {
   return densityCount;
 }
 
-function getSortedDensity(text, minThreshold) {
-  const densityCount = getDensity(text);
+function getSortedDensity(text, minThreshold, ignoreCase, displayUpper) {
+  const densityCount = getDensity(text, ignoreCase, displayUpper);
   densityCount.sort((a, b) => b[2] - a[2]);
   const rangedDensity = densityCount.filter((item) => item[2] >= minThreshold);
   return rangedDensity;

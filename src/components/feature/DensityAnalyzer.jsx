@@ -11,7 +11,7 @@ export default function DensityAnalyzer({ data }) {
       </p>
     );
   }
-  const density = getSortedDensity(data.userinput, 1);
+  const density = getSortedDensity(data.userinput, 1, true, true);
   let id = 0;
   const densityList = density.map((item) => (
     <Density

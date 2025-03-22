@@ -2,8 +2,7 @@
   display: flex;
 }
 
-.density-item,
-.collapsible-label {
+.density-item {
   font-size: var(--fs-4);
   font-weight: var(--fw-4);
   line-height: var(--lh-4);
@@ -15,5 +14,16 @@
 }
 
 .collapsible-label {
+  all: initial;
   margin-top: 16px;
+  background: none;
+  font-size: var(--fs-3);
+  font-weight: var(--fw-3);
+  line-height: var(--lh-3);
+  letter-spacing: var(--ls-3);
+}
+
+.density-content,
+.collapsible-label {
+  color: var(--neutral-200);
 }

@@ -31,13 +31,28 @@
   --orange-800: RGB(218, 55, 1);
 }
 
-* {
-  /* border: 1px solid black; */
-}
+/* * {
+  border: 1px solid black;
+} */
 
 body {
   width: 100vw;
   font-family: var(--font-primary);
+}
+
+body::before {
+  content: ""; /* Creates an invisible element before the body’s content, 
+  allowing to apply a background image and styles to it */
+  position: fixed; /* Fixes the position relative to the viewport */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Places background behind other content */
+  background-image: url("src/assets/bg-dark-theme.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 *,
@@ -48,6 +63,7 @@ body {
 }
 
 input,
-textarea {
+textarea,
+button {
   font: inherit;
 }

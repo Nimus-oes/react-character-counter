@@ -7,7 +7,7 @@ export default function ImgButton({
 }) {
   return (
     <div className={boxClass}>
-      <img src={src} alt={alt} onClick={handleClick} className={iconClass} />
+      <img src={src} alt={alt} className={iconClass} />
     </div>
   );
 }

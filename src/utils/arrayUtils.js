@@ -3,5 +3,3 @@ function cutList(array, threshold) {
 }
 
 export { cutList };
-
-console.log(cutList([1, 2, 3], 5));

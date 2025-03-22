@@ -9,6 +9,8 @@
   margin-bottom: 10px;
   border-radius: 12px;
   padding: 13px 11px;
+  background-color: var(--neutral-800);
+  border: 1px solid var(--neutral-700);
 }
 
 .limit-input {
@@ -41,6 +43,11 @@
 .option-item,
 .timer-item {
   height: 23px;
+}
+
+.textbox,
+.sub-input {
+  color: var(--neutral-200);
 }
 
 @media only screen and (min-width: 768px) {

@@ -52,6 +52,7 @@
   }
 
   .banner-item {
+    flex-basis: 319px;
     flex-grow: 1;
     height: 150px;
     padding: 25px 16px;

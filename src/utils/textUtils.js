@@ -1,3 +1,7 @@
+function limitText(text, maxLength) {
+  return text.slice(0, maxLength);
+}
+
 function removeSpecialCharsSpaces(text) {
   return text.replace(/[^\p{L}]/gu, "");
 }
@@ -61,4 +65,5 @@ export {
   countSentence,
   getSortedDensity,
   getReadingTime,
+  limitText,
 };

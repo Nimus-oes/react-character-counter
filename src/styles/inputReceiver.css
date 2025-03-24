@@ -13,6 +13,26 @@
   border: 1px solid var(--neutral-700);
 }
 
+.textbox:focus {
+  outline: none;
+}
+
+.textbox-limit-available,
+.textbox-limit-available:focus {
+  outline-style: solid;
+  outline-color: blue;
+}
+
+.textbox-limit-reached,
+.textbox-limit-reached:focus {
+  outline-style: solid;
+  outline-color: red;
+}
+
+.limit-alert {
+  color: red;
+}
+
 .limit-input {
   width: 55px;
   height: 23px;

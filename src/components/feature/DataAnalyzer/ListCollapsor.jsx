@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { cutList } from "../../utils/arrayUtils";
+import { cutList } from "../../../utils/arrayUtils";
 
 export default function ListCollapsor({
   mappedList,

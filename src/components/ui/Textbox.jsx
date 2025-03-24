@@ -1,8 +1,13 @@
-export default function Textbox({ handleChange, maxLength }) {
+export default function Textbox({
+  handleChange,
+  maxLength,
+  uiClass,
+  focusClass,
+}) {
   return (
     <div>
       <textarea
-        className="textbox"
+        className={`${uiClass} ${focusClass}`}
         onChange={handleChange}
         maxLength={maxLength}
       ></textarea>

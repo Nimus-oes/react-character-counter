@@ -1,12 +1,128 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+```
+react-character-counter
+├─ eslint.config.js
+├─ index.html
+├─ package-lock.json
+├─ package.json
+├─ public
+│  └─ vite.svg
+├─ src
+│  ├─ App.css
+│  ├─ App.jsx
+│  ├─ assets
+│  │  ├─ bg-dark-theme.png
+│  │  ├─ bg-light-theme.png
+│  │  ├─ icon-check.svg
+│  │  ├─ icon-info.svg
+│  │  ├─ icon-moon.svg
+│  │  ├─ icon-sun.svg
+│  │  ├─ logo-dark-theme.svg
+│  │  ├─ logo-light-theme.svg
+│  │  ├─ pattern-character-count.svg
+│  │  ├─ pattern-sentence-count.svg
+│  │  └─ pattern-word-count.svg
+│  ├─ components
+│  │  ├─ context
+│  │  ├─ features
+│  │  │  ├─ Banner
+│  │  │  │  ├─ Banner.module.css
+│  │  │  │  └─ index.jsx
+│  │  │  ├─ BannerList
+│  │  │  │  ├─ BannerList.module.css
+│  │  │  │  └─ index.jsx
+│  │  │  ├─ Density
+│  │  │  │  ├─ Density.css
+│  │  │  │  └─ index.jsx
+│  │  │  ├─ DensityList
+│  │  │  │  ├─ DensityList.module.css
+│  │  │  │  └─ index.jsx
+│  │  │  ├─ Options
+│  │  │  │  ├─ Options.module.css
+│  │  │  │  └─ index.jsx
+│  │  │  ├─ ReadingTime
+│  │  │  │  ├─ ReadingTime.module.css
+│  │  │  │  └─ index.jsx
+│  │  │  └─ TextInput
+│  │  │     ├─ TextInput.module.css
+│  │  │     └─ index.jsx
+│  │  ├─ layout
+│  │  │  ├─ Header
+│  │  │  │  ├─ Header.module.css
+│  │  │  │  └─ index.jsx
+│  │  │  └─ Main
+│  │  │     ├─ Main.module.css
+│  │  │     └─ index.jsx
+│  │  └─ style
+│  ├─ index.css
+│  ├─ index.jsx
+│  └─ utils
+│     ├─ arrayUtils.js
+│     └─ textUtils.js
+└─ vite.config.js
 
-Currently, two official plugins are available:
+```
+```
+react-character-counter
+├─ README.md
+├─ eslint.config.js
+├─ index.html
+├─ package-lock.json
+├─ package.json
+├─ public
+│  └─ vite.svg
+├─ src
+│  ├─ App.css
+│  ├─ App.jsx
+│  ├─ assets
+│  │  ├─ bg-dark-theme.png
+│  │  ├─ bg-light-theme.png
+│  │  ├─ icon-check.svg
+│  │  ├─ icon-info.svg
+│  │  ├─ icon-moon.svg
+│  │  ├─ icon-sun.svg
+│  │  ├─ logo-dark-theme.svg
+│  │  ├─ logo-light-theme.svg
+│  │  ├─ pattern-character-count.svg
+│  │  ├─ pattern-sentence-count.svg
+│  │  └─ pattern-word-count.svg
+│  ├─ components
+│  │  ├─ features
+│  │  │  ├─ Banner
+│  │  │  │  ├─ Banner.module.css
+│  │  │  │  └─ index.jsx
+│  │  │  ├─ BannerList
+│  │  │  │  ├─ BannerList.module.css
+│  │  │  │  └─ index.jsx
+│  │  │  ├─ Density
+│  │  │  │  ├─ Density.css
+│  │  │  │  └─ index.jsx
+│  │  │  ├─ DensityList
+│  │  │  │  ├─ DensityList.module.css
+│  │  │  │  └─ index.jsx
+│  │  │  ├─ Options
+│  │  │  │  ├─ Options.module.css
+│  │  │  │  └─ index.jsx
+│  │  │  ├─ ReadingTime
+│  │  │  │  ├─ ReadingTime.module.css
+│  │  │  │  └─ index.jsx
+│  │  │  └─ TextInput
+│  │  │     ├─ TextInput.module.css
+│  │  │     └─ index.jsx
+│  │  └─ layout
+│  │     ├─ Header
+│  │     │  ├─ Header.module.css
+│  │     │  └─ index.jsx
+│  │     └─ Main
+│  │        ├─ Main.module.css
+│  │        └─ index.jsx
+│  ├─ context
+│  ├─ hooks
+│  ├─ index.css
+│  ├─ index.jsx
+│  └─ utils
+│     ├─ arrayUtils.js
+│     └─ textUtils.js
+└─ vite.config.js
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```

@@ -3,21 +3,25 @@ import DensityList from "../../features/DensityList";
 import Options from "../../features/Options";
 import ReadingTime from "../../features/ReadingTime";
 import TextInput from "../../features/TextInput";
+import { useText } from "../../../context/textContext";
 
 export default function Main() {
+  const text = useText();
   return (
     <main>
-      <h1>Character Counter</h1>
-      <section className="user-input">
+      <h1>{text.app_title}</h1>
+      <section>
         <TextInput />
+        <p>{text.limit_reached_alert}</p>
         <Options />
         <ReadingTime />
       </section>
-      <section className="data-count">
+      <section>
         <BannerList />
       </section>
-      <section className="data-density">
-        <h3>Density</h3>
+      <section>
+        <h3>{text.density_title}</h3>
+        <p>{text.no_input_no_density}</p>
         <DensityList />
       </section>
     </main>

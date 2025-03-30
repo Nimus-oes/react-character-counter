@@ -1,7 +1,8 @@
-export default function Banner() {
+export default function Banner({ value, title }) {
   return (
     <div>
-      <div>Banner</div>
+      <div>{value}</div>
+      <div>{title}</div>
     </div>
   );
 }

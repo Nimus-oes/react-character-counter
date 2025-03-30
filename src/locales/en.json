@@ -3,7 +3,7 @@
   "input_placeholder": "Start typing here (or paste your text)",
   "option_title_excl_space": "Exclude Spaces",
   "option_title_char_limit": "Set Character Limit",
-  "reading_time_display": "Approx. reading time: {reading_time_value} minute",
+  "reading_time_display": "Approx. reading time: {reading_time_value}",
   "banner_title_total": "Total Characters",
   "banner_title_word": "Word Count",
   "banner_title_sentence": "Sentence Count",

@@ -1,0 +1,13 @@
+.limit-reached,
+.limit-reached:focus {
+  outline: 1px solid red;
+}
+
+.limit-available,
+.limit-available:focus {
+  outline: 1px solid purple;
+}
+
+.no-limit {
+  outline: none;
+}

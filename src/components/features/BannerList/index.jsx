@@ -9,8 +9,8 @@ export default function BannerList() {
     text.banner_title_sentence,
   ];
 
-  const bannerSetList = banners.map((label) => (
-    <Banner value="0" title={label} />
+  const bannerSetList = banners.map((label, index) => (
+    <Banner value="0" title={label} key={index} />
   ));
 
   return (

@@ -3,10 +3,10 @@ import en from "../locales/en.json";
 
 const TextContext = createContext("");
 
-export const TextProvider = ({ children }) => {
+export function TextProvider({ children }) {
   return <TextContext.Provider value={en}>{children}</TextContext.Provider>;
-};
+}
 
-export const useText = () => {
+export function useText() {
   return useContext(TextContext);
-};
+}

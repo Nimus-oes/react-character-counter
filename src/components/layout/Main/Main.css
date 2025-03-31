@@ -7,13 +7,18 @@
   text-align: center;
 }
 
+.sub-input {
+  display: flex;
+  flex-direction: column;
+}
+
 @media only screen and (min-width: 768px) {
   .main {
     max-width: 990px;
   }
 
   .sub-input {
-    display: flex;
+    flex-direction: row;
     justify-content: space-between;
   }
 }

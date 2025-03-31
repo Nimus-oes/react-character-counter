@@ -4,6 +4,10 @@
   "option_title_excl_space": "Exclude Spaces",
   "option_title_char_limit": "Set Character Limit",
   "reading_time_display": "Approx. reading time: {reading_time_value}",
+  "reading_time_value": {
+    "one": "< 1 minute",
+    "other": "< %d minutes"
+  },
   "banner_title_total": "Total Characters",
   "banner_title_word": "Word Count",
   "banner_title_sentence": "Sentence Count",

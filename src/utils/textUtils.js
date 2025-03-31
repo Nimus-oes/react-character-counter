@@ -41,7 +41,8 @@ function getDensity(text, ignoreCase, displayUpper) {
   const densityCount = [];
   charCount.forEach((count, char) => {
     const density = (count / text.length) * 100;
-    densityCount.push([char, count, density]);
+    const roundedDensity = density.toFixed(2);
+    densityCount.push([char, count, roundedDensity]);
   });
 
   return densityCount;
@@ -52,7 +53,7 @@ function getSortedDensity(text, minThreshold, ignoreCase, displayUpper) {
   const densityCount = getDensity(clearedText, ignoreCase, displayUpper);
   densityCount.sort((a, b) => b[2] - a[2]);
   const rangedDensity = densityCount.filter((item) => item[2] >= minThreshold);
-  return rangedDensity;
+  return rangedDensity; // returns [[char, count, density], ...]
 }
 
 function getReadingTime(text, wordsPerMin) {

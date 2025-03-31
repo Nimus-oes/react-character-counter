@@ -8,7 +8,7 @@ export default function ReadingTime() {
   const template = text.reading_time_display;
   const pluralRules = text.reading_time_value;
   const userinput = useContent().userinput;
-  const readingTimeValue = getReadingTime(userinput, 200);
+  const readingTimeValue = getReadingTime(userinput, 100);
   const readingTimeText = formatText(
     template,
     { reading_time_value: readingTimeValue },

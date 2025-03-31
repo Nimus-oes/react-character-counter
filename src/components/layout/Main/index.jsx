@@ -6,6 +6,7 @@ import TextInput from "../../features/TextInput";
 import { useText } from "../../../context/textContext";
 import { useContent } from "../../../context/StateContext";
 import { formatText } from "../../../utils/formatText";
+import "./Main.css";
 
 function getLimitStatus(text, maxLength) {
   return text && maxLength && text.length > maxLength;
@@ -21,13 +22,15 @@ export default function Main() {
   });
 
   return (
-    <main>
-      <h1>{text.app_title}</h1>
+    <main className="main">
+      <h1 className="app-title">{text.app_title}</h1>
       <section>
         <TextInput />
         {isLimitReached && <p>{limitAlert}</p>}
-        <Options />
-        <ReadingTime />
+        <div className="sub-input">
+          <Options />
+          <ReadingTime />
+        </div>
       </section>
       <section>
         <BannerList />

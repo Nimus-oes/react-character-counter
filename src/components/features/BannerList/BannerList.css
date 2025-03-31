@@ -1,0 +1,17 @@
+.banner {
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .banner-list {
+    display: flex;
+  }
+
+  .banner {
+    flex-basis: 224px;
+    flex-grow: 1;
+  }
+}

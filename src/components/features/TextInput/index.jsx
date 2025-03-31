@@ -21,14 +21,12 @@ export default function TextInput() {
   };
 
   return (
-    <div>
-      <textarea
-        name=""
-        id=""
-        placeholder={text.input_placeholder}
-        onChange={handleInput}
-        className={limitClass}
-      ></textarea>
-    </div>
+    <textarea
+      name=""
+      id=""
+      placeholder={text.input_placeholder}
+      onChange={handleInput}
+      className={`${limitClass} text-input`}
+    ></textarea>
   );
 }

@@ -1,11 +1,12 @@
 import { useText } from "../../../context/textContext";
 import { useContent } from "../../../context/StateContext";
-import Banner from "../Banner";
+import Banner from "./Banner";
 import {
   noSpaceTotalChars,
   countWord,
   countSentence,
 } from "../../../utils/textUtils";
+import "./BannerList.css";
 
 export default function BannerList() {
   const text = useText();
@@ -27,9 +28,5 @@ export default function BannerList() {
     <Banner title={item.title} value={formatDigits(item.value)} key={index} />
   ));
 
-  return (
-    <div>
-      <div>{bannerSetList}</div>
-    </div>
-  );
+  return <div className="banner-list">{bannerSetList}</div>;
 }

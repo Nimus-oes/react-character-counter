@@ -1,4 +1,4 @@
-import Density from "../Density";
+import Density from "./Density";
 import { getSortedDensity } from "../../../utils/textUtils";
 import { useContent } from "../../../context/StateContext";
 

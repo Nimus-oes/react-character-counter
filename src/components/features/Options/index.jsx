@@ -1,5 +1,6 @@
 import { useText } from "../../../context/textContext";
 import { useContent, useSetContent } from "../../../context/StateContext";
+import "./Options.css";
 
 export default function Options() {
   const text = useText();
@@ -19,7 +20,7 @@ export default function Options() {
   };
 
   return (
-    <div>
+    <div className="options">
       <div>
         <input type="checkbox" id="nospace" onClick={handleSelect} />{" "}
         <label htmlFor="nospace">{text.option_title_excl_space}</label>

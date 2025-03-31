@@ -1,0 +1,19 @@
+.main {
+  width: 91.5%;
+  margin: 0 auto;
+}
+
+.app-title {
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .main {
+    max-width: 990px;
+  }
+
+  .sub-input {
+    display: flex;
+    justify-content: space-between;
+  }
+}

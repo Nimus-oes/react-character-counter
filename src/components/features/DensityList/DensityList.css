@@ -1,4 +1,8 @@
 .density {
   display: flex;
   justify-content: space-between;
+  font-size: var(--fs-4);
+  font-weight: var(--fw-4);
+  letter-spacing: var(--ls-4);
+  line-height: var(--lh-4);
 }

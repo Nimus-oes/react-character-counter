@@ -5,16 +5,37 @@
 
 .app-title {
   text-align: center;
+  font-size: var(--fs-1-m);
+  font-weight: var(--fw-1);
+  letter-spacing: var(--ls-1);
+  line-height: var(--lh-1);
+  max-width: 540px;
+  margin: 0 auto;
 }
 
 .sub-input {
   display: flex;
   flex-direction: column;
+  font-size: var(--fs-4);
+  font-weight: var(--fw-4);
+  letter-spacing: var(--ls-4);
+  line-height: var(--lh-4);
+}
+
+.density-title {
+  font-size: var(--fs-2);
+  font-weight: var(--fw-2);
+  letter-spacing: var(--ls-2);
+  line-height: var(--lh-2);
 }
 
 @media only screen and (min-width: 768px) {
   .main {
     max-width: 990px;
+  }
+
+  .app-title {
+    font-size: var(--fs-1);
   }
 
   .sub-input {

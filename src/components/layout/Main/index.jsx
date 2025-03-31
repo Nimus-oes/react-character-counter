@@ -36,7 +36,7 @@ export default function Main() {
         <BannerList />
       </section>
       <section>
-        <h3>{text.density_title}</h3>
+        <h3 className="density-title">{text.density_title}</h3>
         {content.userinput ? (
           <DensityList />
         ) : (

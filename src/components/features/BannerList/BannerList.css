@@ -5,6 +5,20 @@
   justify-content: center;
 }
 
+.banner-value {
+  font-size: var(--fs-1-m);
+  font-weight: var(--fw-1);
+  letter-spacing: var(--ls-1);
+  line-height: var(--lh-1);
+}
+
+.banner-title {
+  font-size: var(--fs-3);
+  font-weight: var(--fw-3);
+  letter-spacing: var(--ls-3);
+  line-height: var(--lh-3);
+}
+
 @media only screen and (min-width: 768px) {
   .banner-list {
     display: flex;
@@ -13,5 +27,9 @@
   .banner {
     flex-basis: 224px;
     flex-grow: 1;
+  }
+
+  .banner-value {
+    font-size: var(--fs-1);
   }
 }

@@ -19,6 +19,18 @@
   line-height: var(--lh-3);
 }
 
+.total-count {
+  background-color: var(--purple-block);
+}
+
+.word-count {
+  background-color: var(--yellow-block);
+}
+
+.sentence-count {
+  background-color: var(--orange-block);
+}
+
 @media only screen and (min-width: 768px) {
   .banner-list {
     display: flex;

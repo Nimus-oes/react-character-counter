@@ -11,6 +11,7 @@
   line-height: var(--lh-1);
   max-width: 540px;
   margin: 0 auto;
+  color: var(--neutral-1);
 }
 
 .sub-input {
@@ -22,11 +23,20 @@
   line-height: var(--lh-4);
 }
 
+.limit-alert {
+  color: var(--highlight-1);
+}
+
 .density-title {
   font-size: var(--fs-2);
   font-weight: var(--fw-2);
   letter-spacing: var(--ls-2);
   line-height: var(--lh-2);
+  color: var(--neutral-4);
+}
+
+.density-no-content {
+  color: var(--neutral-4);
 }
 
 @media only screen and (min-width: 768px) {

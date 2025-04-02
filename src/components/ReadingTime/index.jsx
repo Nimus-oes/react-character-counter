@@ -1,6 +1,7 @@
 import { getReadingTime } from "../../utils/textUtils";
 import { formatText } from "../../utils/formatText";
 import { useText } from "../../context/textContext";
+import "./ReadingTime.css";
 
 export default function ReadingTime({ userinput }) {
   const text = useText();
@@ -14,7 +15,7 @@ export default function ReadingTime({ userinput }) {
   );
   return (
     <div>
-      <div>{readingTimeText}</div>
+      <div className="reading-time">{readingTimeText}</div>
     </div>
   );
 }

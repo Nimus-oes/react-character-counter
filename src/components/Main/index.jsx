@@ -31,7 +31,7 @@ export default function Main() {
       <h1 className="app-title">{text.app_title}</h1>
       <section>
         <TextInput content={content} setContent={setContent} />
-        {isLimitReached && <p>{limitAlert}</p>}
+        {isLimitReached && <p className="limit-alert">{limitAlert}</p>}
         <div className="sub-input">
           <Options content={content} setContent={setContent} />
           <ReadingTime userinput={content.userinput} />
@@ -45,7 +45,7 @@ export default function Main() {
         {content.userinput ? (
           <DensityList userinput={content.userinput} />
         ) : (
-          <p>{text.no_input_no_density}</p>
+          <p className="density-no-content">{text.no_input_no_density}</p>
         )}
       </section>
     </main>

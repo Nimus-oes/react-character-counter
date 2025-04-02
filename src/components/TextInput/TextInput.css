@@ -6,16 +6,18 @@
   font-weight: var(--fw-3);
   line-height: var(--lh-3);
   letter-spacing: var(--ls-3);
+  color: var(--neutral-2);
+  background-color: var(--neutral-3);
 }
 
 .limit-reached,
 .limit-reached:focus {
-  outline: 1px solid red;
+  outline: 1px solid var(--highlight-1);
 }
 
 .limit-available,
 .limit-available:focus {
-  outline: 1px solid purple;
+  outline: 1px solid var(--highlight-2);
 }
 
 .no-limit {

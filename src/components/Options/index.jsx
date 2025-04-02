@@ -1,12 +1,8 @@
-import { useText } from "../../../context/textContext";
-import { useContent, useSetContent } from "../../../context/StateContext";
+import { useText } from "../../context/textContext";
 import "./Options.css";
 
-export default function Options() {
+export default function Options({ content, setContent }) {
   const text = useText();
-  const content = useContent();
-  const setContent = useSetContent();
-
   const handleInput = (e) => {
     setContent({ ...content, maxlength: e.target.value });
   };

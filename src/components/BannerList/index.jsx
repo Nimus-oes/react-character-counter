@@ -1,16 +1,14 @@
-import { useText } from "../../../context/textContext";
-import { useContent } from "../../../context/StateContext";
 import Banner from "./Banner";
 import {
   noSpaceTotalChars,
   countWord,
   countSentence,
-} from "../../../utils/textUtils";
+} from "../../utils/textUtils";
 import "./BannerList.css";
+import { useText } from "../../context/textContext";
 
-export default function BannerList() {
+export default function BannerList({ content }) {
   const text = useText();
-  const content = useContent();
   const userinput = content.userinput;
   const banners = [
     {

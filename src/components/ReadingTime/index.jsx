@@ -1,13 +1,11 @@
-import { useText } from "../../../context/textContext";
-import { useContent } from "../../../context/StateContext";
-import { getReadingTime } from "../../../utils/textUtils";
-import { formatText } from "../../../utils/formatText";
+import { getReadingTime } from "../../utils/textUtils";
+import { formatText } from "../../utils/formatText";
+import { useText } from "../../context/textContext";
 
-export default function ReadingTime() {
+export default function ReadingTime({ userinput }) {
   const text = useText();
   const template = text.reading_time_display;
   const pluralRules = text.reading_time_value;
-  const userinput = useContent().userinput;
   const readingTimeValue = getReadingTime(userinput, 100);
   const readingTimeText = formatText(
     template,

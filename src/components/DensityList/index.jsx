@@ -1,10 +1,7 @@
 import Density from "./Density";
-import { getSortedDensity } from "../../../utils/textUtils";
-import { useContent } from "../../../context/StateContext";
+import { getSortedDensity } from "../../utils/textUtils";
 
-export default function DensityList() {
-  const content = useContent();
-  const userinput = content.userinput;
+export default function DensityList({ userinput }) {
   const data = getSortedDensity(userinput, 1, true, true); // [[char, count, density], ...]
   const densitySetList = data.map((item, index) => (
     <Density

@@ -1,11 +1,11 @@
-import BannerList from "../../features/BannerList";
-import DensityList from "../../features/DensityList";
-import Options from "../../features/Options";
-import ReadingTime from "../../features/ReadingTime";
-import TextInput from "../../features/TextInput";
-import { useText } from "../../../context/textContext";
-import { useContent } from "../../../context/StateContext";
-import { formatText } from "../../../utils/formatText";
+import { useState } from "react";
+import BannerList from "../BannerList";
+import DensityList from "../DensityList";
+import Options from "../Options";
+import ReadingTime from "../ReadingTime";
+import TextInput from "../TextInput";
+import { formatText } from "../../utils/formatText";
+import { useText } from "../../context/textContext";
 import "./Main.css";
 
 function getLimitStatus(text, maxLength) {
@@ -14,7 +14,12 @@ function getLimitStatus(text, maxLength) {
 
 export default function Main() {
   const text = useText();
-  const content = useContent();
+  const [content, setContent] = useState({
+    userinput: "",
+    nospace: false,
+    limit: false,
+    maxlength: null,
+  });
   const isLimitReached = getLimitStatus(content.userinput, content.maxlength);
   const alertTemplate = text.limit_reached_alert;
   const limitAlert = formatText(alertTemplate, {
@@ -25,20 +30,20 @@ export default function Main() {
     <main className="main">
       <h1 className="app-title">{text.app_title}</h1>
       <section>
-        <TextInput />
+        <TextInput content={content} setContent={setContent} />
         {isLimitReached && <p>{limitAlert}</p>}
         <div className="sub-input">
-          <Options />
-          <ReadingTime />
+          <Options content={content} setContent={setContent} />
+          <ReadingTime userinput={content.userinput} />
         </div>
       </section>
       <section>
-        <BannerList />
+        <BannerList content={content} />
       </section>
       <section>
         <h3 className="density-title">{text.density_title}</h3>
         {content.userinput ? (
-          <DensityList />
+          <DensityList userinput={content.userinput} />
         ) : (
           <p>{text.no_input_no_density}</p>
         )}

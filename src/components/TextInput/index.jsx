@@ -1,5 +1,4 @@
-import { useText } from "../../../context/textContext";
-import { useContent, useSetContent } from "../../../context/StateContext";
+import { useText } from "../../context/textContext";
 import "./TextInput.css";
 
 function getLimitClass(text, maxLength) {
@@ -10,10 +9,8 @@ function getLimitClass(text, maxLength) {
   }
 }
 
-export default function TextInput() {
+export default function TextInput({ content, setContent }) {
   const text = useText();
-  const content = useContent();
-  const setContent = useSetContent();
   const limitClass = getLimitClass(content.userinput, content.maxlength);
 
   const handleInput = (e) => {

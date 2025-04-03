@@ -1,11 +1,16 @@
 import "./DensityList.css";
 
-export default function Density({ letter, bar, ratio }) {
+export default function Density({ letter, count, ratio }) {
   return (
     <div className="density">
-      <div>{letter}</div>
-      <div>{bar}</div>
-      <div>{ratio}</div>
+      <label htmlFor={letter}>{letter}</label>
+      <progress
+        id={letter}
+        value={ratio}
+        max="100"
+        className="progress"
+      ></progress>
+      <div>{`${count} (${ratio}%)`}</div>
     </div>
   );
 }

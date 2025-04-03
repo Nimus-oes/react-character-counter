@@ -6,12 +6,7 @@ import Density from "./Density";
 export default function DensityList({ userinput }) {
   const data = getSortedDensity(userinput, 1, true, true); // [[char, count, density], ...]
   const densityList = data.map((item, index) => (
-    <Density
-      letter={item[0]}
-      bar="Some bar"
-      ratio={`${item[1]} (${item[2]}%)`}
-      key={index}
-    />
+    <Density letter={item[0]} count={item[1]} ratio={item[2]} key={index} />
   ));
 
   const shouldSplit = densityList.length > 5;

@@ -1,12 +1,13 @@
 .header {
   width: 91.5%;
   display: flex;
-  margin: 0 auto;
+  margin: 16px auto 0px auto;
   justify-content: space-between;
 }
 
 @media only screen and (min-width: 768px) {
   .header {
     max-width: 990px;
+    margin-top: 32px;
   }
 }

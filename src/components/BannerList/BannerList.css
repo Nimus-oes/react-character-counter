@@ -3,6 +3,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border-radius: 12px;
+  padding: 20px;
 }
 
 .banner-value {
@@ -19,6 +21,12 @@
   line-height: var(--lh-3);
 }
 
+.banner-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
 .total-count {
   background-color: var(--purple-block);
 }
@@ -32,16 +40,23 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .banner-list {
-    display: flex;
-  }
-
   .banner {
     flex-basis: 224px;
     flex-grow: 1;
+    padding: 12px;
   }
 
   .banner-value {
     font-size: var(--fs-1);
+  }
+
+  .banner-list {
+    flex-direction: row;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .banner {
+    padding: 16px;
   }
 }

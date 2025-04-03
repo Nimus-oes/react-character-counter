@@ -20,8 +20,10 @@ export default function DensityList({ userinput }) {
 
   return (
     <div>
-      {firstList}
-      {isOpen && secondList}
+      <div className="density-list">
+        {firstList}
+        {isOpen && secondList}
+      </div>
       {shouldSplit && (
         <p className="list-label" onClick={handleClick}>
           {isOpen

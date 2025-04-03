@@ -1,3 +1,10 @@
 .reading-time {
   color: var(--neutral-4);
+  height: 21px;
+}
+
+@media only screen and (min-width: 768px) {
+  .reading-time {
+    height: 29px;
+  }
 }

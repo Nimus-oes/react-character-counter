@@ -1,6 +1,6 @@
 .main {
   width: 91.5%;
-  margin: 0 auto;
+  margin: 0 auto 70px auto;
 }
 
 .app-title {
@@ -10,17 +10,15 @@
   letter-spacing: var(--ls-1);
   line-height: var(--lh-1);
   max-width: 540px;
-  margin: 0 auto;
+  margin: 40px auto;
   color: var(--neutral-1);
 }
 
 .sub-input {
   display: flex;
   flex-direction: column;
-  font-size: var(--fs-4);
-  font-weight: var(--fw-4);
-  letter-spacing: var(--ls-4);
-  line-height: var(--lh-4);
+  margin: 16px 0 40px 0;
+  gap: 12px;
 }
 
 .limit-alert {
@@ -33,10 +31,20 @@
   letter-spacing: var(--ls-2);
   line-height: var(--lh-2);
   color: var(--neutral-4);
+  margin-top: 24px;
 }
 
 .density-no-content {
   color: var(--neutral-4);
+  margin-top: 20px;
+}
+
+.sub-input,
+.density-no-content {
+  font-size: var(--fs-4);
+  font-weight: var(--fw-4);
+  letter-spacing: var(--ls-4);
+  line-height: var(--lh-4);
 }
 
 @media only screen and (min-width: 768px) {

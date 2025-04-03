@@ -17,14 +17,16 @@ export default function Options({ content, setContent }) {
 
   return (
     <div className="options">
-      <div>
+      <div className="space-option">
         <input type="checkbox" id="nospace" onClick={handleSelect} />{" "}
         <label htmlFor="nospace">{text.option_title_excl_space}</label>
       </div>
-      <div>
+      <div className="limit-option">
         <input type="checkbox" id="limit" onClick={handleSelect} />{" "}
         <label htmlFor="limit">{text.option_title_char_limit}</label>
-        {content.limit && <input type="number" onChange={handleInput} />}
+        {content.limit && (
+          <input type="number" onChange={handleInput} className="max-length" />
+        )}
       </div>
     </div>
   );

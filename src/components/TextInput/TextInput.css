@@ -8,6 +8,7 @@
   letter-spacing: var(--ls-3);
   color: var(--neutral-2);
   background-color: var(--neutral-3);
+  padding: 12px;
 }
 
 .limit-reached,
@@ -22,4 +23,10 @@
 
 .no-limit {
   outline: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .text-input {
+    padding: 18px;
+  }
 }

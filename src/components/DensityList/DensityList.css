@@ -1,11 +1,20 @@
 .density {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   font-size: var(--fs-4);
   font-weight: var(--fw-4);
   letter-spacing: var(--ls-4);
   line-height: var(--lh-4);
   color: var(--neutral-4);
+  height: 21px;
+}
+
+.density-list {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .list-label {
@@ -18,7 +27,7 @@
 
 .progress {
   width: 70%;
-  height: 10px;
+  height: 12px;
   border-radius: 5px;
   overflow: hidden;
   background-color: var(--neutral-5);

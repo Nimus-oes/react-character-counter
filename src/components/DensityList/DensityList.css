@@ -8,6 +8,7 @@
   line-height: var(--lh-4);
   color: var(--neutral-4);
   height: 21px;
+  gap: 16px;
 }
 
 .density-list {
@@ -25,8 +26,12 @@
   color: var(--neutral-4);
 }
 
+.letter {
+  flex-basis: 16px;
+}
+
 .progress {
-  width: 70%;
+  flex-basis: 87%;
   height: 12px;
   border-radius: 5px;
   overflow: hidden;
@@ -43,4 +48,21 @@
 
 .progress::-moz-progress-bar {
   background-color: var(--purple-block);
+}
+
+.ratio {
+  flex-basis: 110px;
+  text-align: right;
+}
+
+.letter,
+.ratio,
+.progress {
+  flex-grow: 1;
+}
+
+@media only screen and (min-width: 768px) {
+  .ratio {
+    flex-basis: 95px;
+  }
 }

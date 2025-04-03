@@ -18,7 +18,7 @@ export default function Header() {
   return (
     <header className="header">
       <div>
-        <img src={theme.logo} alt={theme.logoalt} />
+        <img src={theme.logo} alt={theme.logoalt} className="logo" />
       </div>
       <div className="theme-icon-container">
         <img

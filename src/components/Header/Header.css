@@ -6,6 +6,10 @@
   align-items: center;
 }
 
+.logo {
+  width: 185px;
+}
+
 .theme-icon {
   width: 20px;
   height: 20px;
@@ -25,6 +29,10 @@
   .header {
     max-width: 990px;
     margin-top: 32px;
+  }
+
+  .logo {
+    width: 245px;
   }
 
   .theme-icon {

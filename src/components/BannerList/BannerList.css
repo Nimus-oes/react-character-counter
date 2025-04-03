@@ -5,6 +5,8 @@
   justify-content: center;
   border-radius: 12px;
   padding: 20px;
+  background-repeat: no-repeat;
+  background-position: 110%;
 }
 
 .banner-value {
@@ -29,14 +31,17 @@
 
 .total-count {
   background-color: var(--purple-block);
+  background-image: url(../../assets/pattern-character-count.svg);
 }
 
 .word-count {
   background-color: var(--yellow-block);
+  background-image: url(../../assets/pattern-word-count.svg);
 }
 
 .sentence-count {
   background-color: var(--orange-block);
+  background-image: url(../../assets/pattern-sentence-count.svg);
 }
 
 @media only screen and (min-width: 768px) {

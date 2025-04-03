@@ -50,10 +50,6 @@
   --bg: url("./assets/bg-light-theme.png");
 }
 
-* {
-  border: 1px solid black;
-}
-
 body {
   width: 100vw;
   font-family: var(--font-primary);

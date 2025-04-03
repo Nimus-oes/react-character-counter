@@ -1,9 +1,11 @@
+import { useState } from "react";
+import { cutList, getSortedDensity } from "./densityUtils";
+import { useText } from "../../context/textContext";
 import Density from "./Density";
-import { getSortedDensity } from "../../utils/textUtils";
 
 export default function DensityList({ userinput }) {
   const data = getSortedDensity(userinput, 1, true, true); // [[char, count, density], ...]
-  const densitySetList = data.map((item, index) => (
+  const densityList = data.map((item, index) => (
     <Density
       letter={item[0]}
       bar="Some bar"
@@ -11,9 +13,27 @@ export default function DensityList({ userinput }) {
       key={index}
     />
   ));
+
+  const shouldSplit = densityList.length > 5;
+  const [isOpen, setIsOpen] = useState(false);
+  const [firstList, secondList] = cutList(densityList, 5);
+  const handleClick = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const text = useText();
+
   return (
     <div>
-      <div>{densitySetList}</div>
+      {firstList}
+      {isOpen && secondList}
+      {shouldSplit && (
+        <p className="list-label" onClick={handleClick}>
+          {isOpen
+            ? text.density_list_close_label
+            : text.density_list_open_label}
+        </p>
+      )}
     </div>
   );
 }

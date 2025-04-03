@@ -12,6 +12,8 @@
   "banner_title_word": "Word Count",
   "banner_title_sentence": "Sentence Count",
   "density_title": "Letter Density",
+  "density_list_open_label": "See more",
+  "density_list_close_label": "See less",
   "no_input_no_density": "No characters found. Start typing to see letter density.",
   "limit_reached_alert": "Limit reached! Your text exceeds {max_length} characters."
 }

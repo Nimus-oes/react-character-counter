@@ -9,6 +9,8 @@
   color: var(--neutral-2);
   background-color: var(--neutral-3);
   padding: 12px;
+  border: 1px solid var(--neutral-8);
+  border-radius: 12px;
 }
 
 .limit-reached,

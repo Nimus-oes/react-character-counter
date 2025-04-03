@@ -23,6 +23,7 @@
 
 .limit-alert {
   color: var(--highlight-1);
+  margin-top: 10px;
 }
 
 .density-title {

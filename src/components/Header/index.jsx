@@ -20,8 +20,13 @@ export default function Header() {
       <div>
         <img src={theme.logo} alt={theme.logoalt} />
       </div>
-      <div>
-        <img src={theme.icon} alt={theme.iconalt} onClick={handleClick} />
+      <div className="theme-icon-container">
+        <img
+          src={theme.icon}
+          alt={theme.iconalt}
+          onClick={handleClick}
+          className="theme-icon"
+        />
       </div>
     </header>
   );

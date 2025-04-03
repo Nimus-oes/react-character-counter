@@ -15,6 +15,25 @@
 
 .max-length {
   margin-left: 10px;
+  width: 57px;
+  height: 21px;
+  border-radius: 6px;
+  border: 1px solid var(--neutral-6);
+  background-color: transparent;
+  padding: 4px 12px;
+  color: var(--neutral-9);
+}
+
+/* Chrome, Safari, Edge, Opera */
+.max-length::-webkit-outer-spin-button,
+.max-length::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+/* Firefox */
+.max-length[type="number"] {
+  appearance: none;
+  -moz-appearance: textfield;
 }
 
 @media only screen and (min-width: 768px) {
@@ -25,7 +44,8 @@
   }
 
   .space-option,
-  .limit-option {
+  .limit-option,
+  .max-length {
     height: 29px;
   }
 }

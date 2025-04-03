@@ -34,7 +34,9 @@
   --neutral-3: RGB(42, 43, 55); /* neutral-700(dark)/neutral-100(light) */
   --neutral-4: RGB(228, 228, 239); /* neutral-200(dark)/neutral-900(light) */
   --neutral-5: RGB(33, 34, 44); /* neutral-800(dark)/neutral-100(light) */
-  --highlight-1: RGB(254, 129, 89); /* orange-500(dark)/orange-800(light) */
+  --neutral-6: RGB(64, 66, 84); /* neutral-600(dark/light) */
+  --neutral-7: RGB(255, 255, 255) /* whilte(dark)/neutral-900(light) */
+    --highlight-1: RGB(254, 129, 89); /* orange-500(dark)/orange-800(light) */
   --highlight-2: RGB(194, 124, 248); /* purple-500(dark/light) */
   --purple-block: RGB(211, 160, 250); /* purple-400(dark/light) */
   --yellow-block: RGB(255, 159, 0); /* yellow-500(dark/light) */
@@ -48,6 +50,7 @@
   --neutral-3: RGB(242, 242, 247);
   --neutral-4: RGB(18, 19, 26);
   --neutral-5: RGB(242, 242, 247);
+  --neutral-7: RGB(18, 19, 26);
   --highlight-1: RGB(218, 55, 1);
   --bg: url("./assets/bg-light-theme.png");
 }

@@ -24,6 +24,7 @@ export default function TextInput({ content, setContent }) {
       placeholder={text.input_placeholder}
       onChange={handleInput}
       className={`${limitClass} text-input`}
+      maxlength={content.maxlength}
     ></textarea>
   );
 }

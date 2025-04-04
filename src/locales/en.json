@@ -5,6 +5,7 @@
   "option_title_char_limit": "Set Character Limit",
   "reading_time_display": "Approx. reading time: {reading_time_value}",
   "reading_time_value": {
+    "none": "0 minute",
     "one": "< 1 minute",
     "other": "< %d minutes"
   },

@@ -4,7 +4,11 @@ import { useText } from "../../context/textContext";
 import Density from "./Density";
 
 export default function DensityList({ userinput }) {
+  const text = useText();
   const data = getSortedDensity(userinput, 1, true, true); // [[char, count, density], ...]
+  if (data.length === 0) {
+    return <p className="density-no-content">{text.no_input_no_density}</p>;
+  }
   const densityList = data.map((item, index) => (
     <Density letter={item[0]} count={item[1]} ratio={item[2]} key={index} />
   ));
@@ -15,8 +19,6 @@ export default function DensityList({ userinput }) {
   const handleClick = () => {
     setIsOpen(!isOpen);
   };
-
-  const text = useText();
 
   return (
     <div>

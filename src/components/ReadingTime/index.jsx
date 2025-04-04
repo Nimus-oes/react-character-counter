@@ -1,4 +1,4 @@
-import { getReadingTime } from "../../utils/textUtils";
+import { getReadingTime } from "./readingTimeUtils.js";
 import { formatText } from "../../utils/formatText";
 import { useText } from "../../context/textContext";
 import "./ReadingTime.css";

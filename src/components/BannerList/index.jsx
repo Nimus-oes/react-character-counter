@@ -1,9 +1,5 @@
 import Banner from "./Banner";
-import {
-  noSpaceTotalChars,
-  countWord,
-  countSentence,
-} from "../../utils/textUtils";
+import { noSpaceTotalChars, countWord, countSentence } from "./bannerUtils.js";
 import "./BannerList.css";
 import { useText } from "../../context/textContext";
 

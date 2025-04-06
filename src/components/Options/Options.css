@@ -11,6 +11,7 @@
   background-color: transparent;
   border: 1px solid var(--neutral-4);
   border-radius: 4px;
+  cursor: pointer;
 }
 
 /* Add a checkmark when checked */

@@ -10,7 +10,7 @@ export default function TextInput({ content, setContent }) {
   const limitClass = limitReached ? "limit-reached" : "no-limit";
 
   const handleInput = (e) => {
-    setContent({ ...content, userinput: e.target.value });
+    setContent((prev) => ({ ...prev, userinput: e.target.value }));
   };
 
   return (

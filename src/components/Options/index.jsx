@@ -5,14 +5,18 @@ import "./Options.css";
 export default function Options({ content, setContent }) {
   const text = useText();
   const handleInput = (e) => {
-    setContent({ ...content, maxlength: e.target.value });
+    setContent((prev) => ({ ...prev, maxlength: e.target.value }));
   };
 
   const handleChange = (e) => {
     if (e.target.id === "nospace") {
-      setContent({ ...content, nospace: !content.nospace });
+      setContent((prev) => ({ ...prev, nospace: !content.nospace }));
     } else if (e.target.id === "limit") {
-      setContent({ ...content, limit: !content.limit, maxlength: null });
+      setContent((prev) => ({
+        ...prev,
+        limit: !content.limit,
+        maxlength: null,
+      }));
     }
   };
 

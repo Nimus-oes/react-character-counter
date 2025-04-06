@@ -11,6 +11,8 @@ export function useText() {
   const context = useContext(TextContext);
   if (context === undefined) {
     throw new Error("useText must be used within a TextProvider");
+    // An error indicates that the context is used outside the provider
+    // or the provider is missing
   }
 
   return context;

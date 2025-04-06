@@ -1,8 +1,71 @@
+.native-checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.custom-checkbox {
+  display: inline-block;
+  position: relative;
+  width: 16px;
+  height: 16px;
+  background-color: transparent;
+  border: 1px solid var(--neutral-4);
+  border-radius: 4px;
+}
+
+/* Add a checkmark when checked */
+.native-checkbox:checked + .custom-checkbox::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 5px;
+  width: 4px;
+  height: 8px;
+  border: 1px solid var(--neutral-9);
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+/* Checkbox style when checked with a mouse */
+.native-checkbox:checked + .custom-checkbox {
+  background-color: var(--purple-block);
+  border: 1px solid var(--purple-block);
+}
+
+/* Checkbox style when focused with keyboard */
+.native-checkbox:focus-visible + .custom-checkbox {
+  outline-style: solid;
+  outline-color: var(--purple-block);
+  outline-width: 2px;
+  background-color: white;
+  border: 2px solid white;
+  box-shadow: 0 0 0 1px var(--neutral-10) inset;
+}
+
+/* Checkbox style when focused & checked with keyboard */
+.native-checkbox:focus-visible:checked + .custom-checkbox {
+  background-color: var(--purple-block);
+  box-shadow: none;
+}
+
+/* Checkmark style when focused & checked with keyboard */
+.native-checkbox:focus-visible:checked + .custom-checkbox::after {
+  top: 1px;
+  left: 4px;
+  width: 4px;
+  height: 8px;
+}
+
 .options {
   display: flex;
   flex-direction: column;
   color: var(--neutral-4);
   gap: 12px;
+}
+
+.limit-option-container {
+  display: flex;
+  align-items: center;
 }
 
 .space-option,

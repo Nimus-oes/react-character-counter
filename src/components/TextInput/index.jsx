@@ -1,17 +1,13 @@
 import { useText } from "../../context/textContext";
 import "./TextInput.css";
 
-function getLimitClass(text, maxLength) {
-  if (text && maxLength) {
-    return text.length > maxLength ? "limit-reached" : "limit-available";
-  } else {
-    return "no-limit";
-  }
-}
-
 export default function TextInput({ content, setContent }) {
   const text = useText();
-  const limitClass = getLimitClass(content.userinput, content.maxlength);
+  const limitReached =
+    content.userinput &&
+    content.maxlength &&
+    content.userinput.length > content.maxlength;
+  const limitClass = limitReached ? "limit-reached" : "no-limit";
 
   const handleInput = (e) => {
     setContent({ ...content, userinput: e.target.value });

@@ -11,22 +11,18 @@
   padding: 12px;
   border: 1px solid var(--neutral-8);
   border-radius: 12px;
+  outline: none;
+}
+
+.no-limit:focus-visible {
+  outline: 1px solid var(--highlight-2);
+  box-shadow: 0 0 8px var(--highlight-2);
 }
 
 .limit-reached,
 .limit-reached:focus {
   outline: 1px solid var(--highlight-1);
   box-shadow: 0 0 8px var(--highlight-1);
-}
-
-.limit-available,
-.limit-available:focus {
-  outline: 1px solid var(--highlight-2);
-  box-shadow: 0 0 8px var(--highlight-2);
-}
-
-.no-limit {
-  outline: none;
 }
 
 @media only screen and (min-width: 768px) {

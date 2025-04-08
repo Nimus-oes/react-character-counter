@@ -6,23 +6,24 @@
   font-weight: var(--fw-3);
   line-height: var(--lh-3);
   letter-spacing: var(--ls-3);
-  color: var(--neutral-2);
-  background-color: var(--neutral-3);
+  color: var(--neutral-set-2);
+  background-color: var(--neutral-set-3);
   padding: 12px;
-  border: 1px solid var(--neutral-8);
+  border: 1px solid var(--neutral-set-7);
   border-radius: 12px;
   outline: none;
+  display: block;
 }
 
 .no-limit:focus-visible {
-  outline: 1px solid var(--highlight-2);
-  box-shadow: 0 0 8px var(--highlight-2);
+  outline: 1px solid var(--purple-500);
+  box-shadow: 0 0 8px var(--purple-500);
 }
 
 .limit-reached,
 .limit-reached:focus {
-  outline: 1px solid var(--highlight-1);
-  box-shadow: 0 0 8px var(--highlight-1);
+  outline: 1px solid var(--highlight-set-1);
+  box-shadow: 0 0 8px var(--highlight-set-1);
 }
 
 @media only screen and (min-width: 768px) {

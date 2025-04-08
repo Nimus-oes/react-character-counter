@@ -17,7 +17,7 @@
   --ls-2: -1px;
   --ls-3: -0.6px;
   --ls-4: -0.6px;
-  /* --neutral-0: RGB(255, 255, 255);
+  --neutral-0: RGB(255, 255, 255);
   --neutral-100: RGB(242, 242, 247);
   --neutral-200: RGB(228, 228, 239);
   --neutral-600: RGB(64, 66, 84);
@@ -28,34 +28,38 @@
   --purple-500: RGB(194, 124, 248);
   --yellow-500: RGB(255, 159, 0);
   --orange-500: RGB(254, 129, 89);
-  --orange-800: RGB(218, 55, 1); */
-  --neutral-1: RGB(242, 242, 247); /* neutral-100(dark)/neutral-900(light) */
-  --neutral-2: RGB(228, 228, 239); /* neutral-200(dark)/neutral-700(light) */
-  --neutral-3: RGB(42, 43, 55); /* neutral-700(dark)/neutral-100(light) */
-  --neutral-4: RGB(228, 228, 239); /* neutral-200(dark)/neutral-900(light) */
-  --neutral-5: RGB(33, 34, 44); /* neutral-800(dark)/neutral-100(light) */
-  --neutral-6: RGB(64, 66, 84); /* neutral-600(dark/light) */
-  --neutral-7: RGB(255, 255, 255); /* white(dark)/neutral-900(light) */
-  --neutral-8: RGB(64, 66, 84); /* neutral-600(dark)/neutral-200(light) */
-  --neutral-9: RGB(18, 19, 26); /* neutral-900(dark/light) */
-  --neutral-10: RGB(228, 228, 239); /* neutral-200(dark/light) */
-  --highlight-1: RGB(254, 129, 89); /* orange-500(dark)/orange-800(light) */
-  --highlight-2: RGB(194, 124, 248); /* purple-500(dark/light) */
-  --purple-block: RGB(211, 160, 250); /* purple-400(dark/light) */
-  --yellow-block: RGB(255, 159, 0); /* yellow-500(dark/light) */
-  --orange-block: RGB(254, 129, 89); /* orange-500(dark/light) */
+  --orange-800: RGB(218, 55, 1);
+}
+
+.dark-mode {
+  /* neutral-100(dark)/neutral-900(light) */
+  --neutral-set-1: RGB(242, 242, 247);
+  /* neutral-200(dark)/neutral-700(light) */
+  --neutral-set-2: RGB(228, 228, 239);
+  /* neutral-700(dark)/neutral-100(light) */
+  --neutral-set-3: RGB(42, 43, 55);
+  /* neutral-200(dark)/neutral-900(light) */
+  --neutral-set-4: RGB(228, 228, 239);
+  /* neutral-800(dark)/neutral-100(light) */
+  --neutral-set-5: RGB(33, 34, 44);
+  /* white(dark)/neutral-900(light) */
+  --neutral-set-6: RGB(255, 255, 255);
+  /* neutral-600(dark)/neutral-200(light) */
+  --neutral-set-7: RGB(64, 66, 84);
+  /* orange-500(dark)/orange-800(light) */
+  --highlight-set-1: RGB(254, 129, 89);
   --bg: url("./assets/bg-dark-theme.png");
 }
 
 .light-mode {
-  --neutral-1: RGB(18, 19, 26);
-  --neutral-2: RGB(42, 43, 55);
-  --neutral-3: RGB(242, 242, 247);
-  --neutral-4: RGB(18, 19, 26);
-  --neutral-5: RGB(242, 242, 247);
-  --neutral-7: RGB(18, 19, 26);
-  --neutral-8: RGB(228, 228, 239);
-  --highlight-1: RGB(218, 55, 1);
+  --neutral-set-1: RGB(18, 19, 26);
+  --neutral-set-2: RGB(42, 43, 55);
+  --neutral-set-3: RGB(242, 242, 247);
+  --neutral-set-4: RGB(18, 19, 26);
+  --neutral-set-5: RGB(242, 242, 247);
+  --neutral-set-6: RGB(18, 19, 26);
+  --neutral-set-7: RGB(228, 228, 239);
+  --highlight-set-1: RGB(218, 55, 1);
   --bg: url("./assets/bg-light-theme.png");
 }
 

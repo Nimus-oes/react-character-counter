@@ -7,11 +7,11 @@ export default function Header() {
   const theme = isDark ? themeAsset.dark : themeAsset.light;
   const setBodyTheme = (isDark) => {
     document.body.classList.remove("dark-mode", "light-mode");
-    document.body.classList.add(isDark ? "light-mode" : "dark-mode");
+    document.body.classList.add(isDark ? "dark-mode" : "light-mode");
   };
 
+  setBodyTheme(isDark);
   const handleClick = () => {
-    setBodyTheme(isDark);
     setIsDark((prev) => !prev);
   };
 

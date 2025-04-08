@@ -38,7 +38,7 @@ export default function Main() {
         </div>
       </section>
       <section>
-        <BannerList content={content} />
+        <BannerList userinput={content.userinput} nospace={content.nospace} />
       </section>
       <section>
         <h3 className="density-title">{text.density_title}</h3>

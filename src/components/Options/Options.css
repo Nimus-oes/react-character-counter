@@ -9,7 +9,7 @@
   width: 16px;
   height: 16px;
   background-color: transparent;
-  border: 1px solid var(--neutral-4);
+  border: 1px solid var(--neutral-set-4);
   border-radius: 4px;
   cursor: pointer;
 }
@@ -22,30 +22,30 @@
   left: 5px;
   width: 4px;
   height: 8px;
-  border: 1px solid var(--neutral-9);
+  border: 1px solid var(--neutral-900);
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
 }
 
 /* Checkbox style when checked with a mouse */
 .native-checkbox:checked + .custom-checkbox {
-  background-color: var(--purple-block);
-  border: 1px solid var(--purple-block);
+  background-color: var(--purple-400);
+  border: 1px solid var(--purple-400);
 }
 
 /* Checkbox style when focused with keyboard */
 .native-checkbox:focus-visible + .custom-checkbox {
   outline-style: solid;
-  outline-color: var(--purple-block);
+  outline-color: var(--purple-400);
   outline-width: 2px;
   background-color: white;
   border: 2px solid white;
-  box-shadow: 0 0 0 1px var(--neutral-10) inset;
+  box-shadow: 0 0 0 1px var(--neutral-200) inset;
 }
 
 /* Checkbox style when focused & checked with keyboard */
 .native-checkbox:focus-visible:checked + .custom-checkbox {
-  background-color: var(--purple-block);
+  background-color: var(--purple-400);
   box-shadow: none;
 }
 
@@ -60,7 +60,7 @@
 .options {
   display: flex;
   flex-direction: column;
-  color: var(--neutral-4);
+  color: var(--neutral-set-4);
   gap: 12px;
 }
 
@@ -82,10 +82,10 @@
   width: 57px;
   height: 21px;
   border-radius: 6px;
-  border: 1px solid var(--neutral-6);
+  border: 1px solid var(--neutral-600);
   background-color: transparent;
   padding: 4px 12px;
-  color: var(--neutral-7);
+  color: var(--neutral-set-6);
   outline: none;
 }
 

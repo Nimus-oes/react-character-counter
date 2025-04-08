@@ -3,13 +3,12 @@ import { noSpaceTotalChars, countWord, countSentence } from "./bannerUtils.js";
 import "./BannerList.css";
 import { useText } from "../../context/textContext";
 
-export default function BannerList({ content }) {
+export default function BannerList({ userinput, nospace }) {
   const text = useText();
-  const userinput = content.userinput;
   const banners = [
     {
       title: text.banner_title_total,
-      value: content.nospace ? noSpaceTotalChars(userinput) : userinput.length,
+      value: nospace ? noSpaceTotalChars(userinput) : userinput.length,
       class: "total-count",
     },
     {

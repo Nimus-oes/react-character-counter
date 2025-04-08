@@ -30,17 +30,17 @@
 }
 
 .total-count {
-  background-color: var(--purple-block);
+  background-color: var(--purple-400);
   background-image: url(../../assets/pattern-character-count.svg);
 }
 
 .word-count {
-  background-color: var(--yellow-block);
+  background-color: var(--yellow-500);
   background-image: url(../../assets/pattern-word-count.svg);
 }
 
 .sentence-count {
-  background-color: var(--orange-block);
+  background-color: var(--orange-500);
   background-image: url(../../assets/pattern-sentence-count.svg);
 }
 

@@ -9,8 +9,8 @@ export default function DensityList({ userinput }) {
   if (data.length === 0) {
     return <p className="density-no-content">{text.no_input_no_density}</p>;
   }
-  const densityList = data.map((item, index) => (
-    <Density letter={item[0]} count={item[1]} ratio={item[2]} key={index} />
+  const densityList = data.map((item) => (
+    <Density letter={item[0]} count={item[1]} ratio={item[2]} key={item[0]} />
   ));
 
   const shouldSplit = densityList.length > 5;

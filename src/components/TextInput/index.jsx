@@ -1,3 +1,4 @@
+import { lazy } from "react";
 import { useText } from "../../context/textContext";
 import "./TextInput.css";
 
@@ -14,13 +15,16 @@ export default function TextInput({ content, setContent }) {
   };
 
   return (
-    <textarea
-      name=""
-      id=""
-      placeholder={text.input_placeholder}
-      onChange={handleInput}
-      className={`${limitClass} text-input`}
-      maxLength={content.maxlength}
-    ></textarea>
+    <label>
+      <textarea
+        name=""
+        id=""
+        placeholder={text.input_placeholder}
+        onChange={handleInput}
+        className={`${limitClass} text-input`}
+        maxLength={content.maxlength}
+        value={content.userinput}
+      ></textarea>
+    </label>
   );
 }

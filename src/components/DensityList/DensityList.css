@@ -6,7 +6,7 @@
   font-weight: var(--fw-4);
   letter-spacing: var(--ls-4);
   line-height: var(--lh-4);
-  color: var(--neutral-4);
+  color: var(--neutral-set-4);
   height: 21px;
   gap: 16px;
 }
@@ -23,7 +23,7 @@
   font-weight: var(--fw-3);
   letter-spacing: var(--ls-3);
   line-height: var(--lh-3);
-  color: var(--neutral-4);
+  color: var(--neutral-set-4);
 }
 
 .letter {
@@ -35,19 +35,19 @@
   height: 12px;
   border-radius: 5px;
   overflow: hidden;
-  background-color: var(--neutral-5);
+  background-color: var(--neutral-set-5);
 }
 
 .progress::-webkit-progress-bar {
-  background-color: var(--neutral-5);
+  background-color: var(--neutral-set-5);
 }
 
 .progress::-webkit-progress-value {
-  background-color: var(--purple-block);
+  background-color: var(--purple-400);
 }
 
 .progress::-moz-progress-bar {
-  background-color: var(--purple-block);
+  background-color: var(--purple-400);
 }
 
 .ratio {

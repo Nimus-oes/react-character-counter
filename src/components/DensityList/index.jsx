@@ -17,7 +17,7 @@ export default function DensityList({ userinput }) {
   const [isOpen, setIsOpen] = useState(false);
   const [firstList, secondList] = cutList(densityList, 5);
   const handleClick = () => {
-    setIsOpen(!isOpen);
+    setIsOpen((prev) => !prev);
   };
 
   return (

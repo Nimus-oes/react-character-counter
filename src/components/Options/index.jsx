@@ -38,7 +38,12 @@ export default function Options({ content, setContent }) {
           className="limit-option"
         />
         {content.limit && (
-          <input type="number" onChange={handleInput} className="max-length" />
+          <input
+            type="number"
+            onChange={handleInput}
+            className="max-length"
+            value={content.maxlength}
+          />
         )}
       </div>
     </div>

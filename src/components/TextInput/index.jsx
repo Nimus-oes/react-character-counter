@@ -2,13 +2,9 @@ import { lazy } from "react";
 import { useText } from "../../context/textContext";
 import "./TextInput.css";
 
-export default function TextInput({ content, setContent }) {
+export default function TextInput({ content, setContent, isLimitReached }) {
   const text = useText();
-  const limitReached =
-    content.userinput &&
-    content.maxlength &&
-    content.userinput.length > content.maxlength;
-  const limitClass = limitReached ? "limit-reached" : "no-limit";
+  const limitClass = isLimitReached ? "limit-reached" : "no-limit";
 
   const handleInput = (e) => {
     setContent((prev) => ({ ...prev, userinput: e.target.value }));

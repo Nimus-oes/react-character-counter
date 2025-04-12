@@ -8,10 +8,6 @@ import { formatText } from "../../utils/formatText";
 import { useText } from "../../context/textContext";
 import "./Main.css";
 
-function getLimitStatus(text, maxLength) {
-  return text && maxLength && text.length > maxLength;
-}
-
 export default function Main() {
   const text = useText();
   const [content, setContent] = useState({
@@ -20,7 +16,10 @@ export default function Main() {
     limit: false,
     maxlength: null,
   });
-  const isLimitReached = getLimitStatus(content.userinput, content.maxlength);
+  const isLimitReached =
+    content.userinput &&
+    content.maxlength &&
+    content.userinput.length > content.maxlength;
   const alertTemplate = text.limit_reached_alert;
   const limitAlert = formatText(alertTemplate, {
     max_length: content.maxlength,
@@ -30,7 +29,11 @@ export default function Main() {
     <main className="main">
       <h1 className="app-title">{text.app_title}</h1>
       <section>
-        <TextInput content={content} setContent={setContent} />
+        <TextInput
+          content={content}
+          setContent={setContent}
+          isLimitReached={isLimitReached}
+        />
         {isLimitReached && <p className="limit-alert">{limitAlert}</p>}
         <div className="sub-input">
           <Options content={content} setContent={setContent} />

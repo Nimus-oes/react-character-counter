@@ -267,7 +267,7 @@ Since `isDark` is only used at the top level and doesn’t need to be accessed a
 
 ## Localization Setup
 
-Rather than using a full i18n library, this project implements a scalable structure that allows for easy future expansion into multiple languages.
+This project implements a scalable structure that allows for easy future expansion into multiple languages without using a full i18n library.
 
 ### UI Text in JSON
 
@@ -291,7 +291,7 @@ All display text is stored in `locales/en`.json. To add more languages, you can 
 
 A custom utility function handles placeholder substitution and pluralization logic:
 
-```json
+```js
 export function formatText(template, values, pluralRules = {}) {
   return template.replace(/\{(\w+)\}/g, (_, key) => {
     if (pluralRules[key]) {

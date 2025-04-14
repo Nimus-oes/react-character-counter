@@ -1,4 +1,4 @@
-import { useText } from "../../context/textContext";
+import { useText } from "../../context/TextContext";
 import Checkbox from "./Checkbox";
 import "./Options.css";
 

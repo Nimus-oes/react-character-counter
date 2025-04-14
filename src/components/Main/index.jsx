@@ -5,7 +5,7 @@ import Options from "../Options";
 import ReadingTime from "../ReadingTime";
 import TextInput from "../TextInput";
 import { formatText } from "../../utils/formatText";
-import { useText } from "../../context/textContext";
+import { useText } from "../../context/TextContext";
 import "./Main.css";
 
 export default function Main() {

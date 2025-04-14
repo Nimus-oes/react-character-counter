@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { cutList, getSortedDensity } from "./densityUtils";
-import { useText } from "../../context/textContext";
+import { useText } from "../../context/TextContext";
 import Density from "./Density";
 
 export default function DensityList({ userinput }) {

@@ -1,7 +1,7 @@
 import Banner from "./Banner";
 import { noSpaceTotalChars, countWord, countSentence } from "./bannerUtils.js";
 import "./BannerList.css";
-import { useText } from "../../context/textContext";
+import { useText } from "../../context/TextContext";
 
 export default function BannerList({ userinput, nospace }) {
   const text = useText();

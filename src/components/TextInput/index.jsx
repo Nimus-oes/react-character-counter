@@ -1,5 +1,5 @@
 import { lazy } from "react";
-import { useText } from "../../context/textContext";
+import { useText } from "../../context/TextContext";
 import "./TextInput.css";
 
 export default function TextInput({ content, setContent, isLimitReached }) {

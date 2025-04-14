@@ -1,6 +1,6 @@
 import { getReadingTime } from "./readingTimeUtils.js";
 import { formatText } from "../../utils/formatText";
-import { useText } from "../../context/textContext";
+import { useText } from "../../context/TextContext";
 import "./ReadingTime.css";
 
 export default function ReadingTime({ userinput }) {

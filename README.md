@@ -6,7 +6,7 @@
 
 This project is the first React application I built using the concept of **state**, rather than rendering a static page. It provides real-time analysis of user input, including character count, word count, sentence count, estimated reading time, and character density.
 
-### <div align="center"><a href="">Go to Live Demo</a></div>
+### <div align="center"><a href="https://nimus-oes.github.io/react-character-counter/">Go to Live Demo</a></div>
 
 <br />
 
@@ -63,9 +63,7 @@ src
 ├─ locales
 │  └─ en.json
 └─ utils
-   ├─ arrayUtils.js
-   ├─ formatText.js
-   └─ textUtils.js
+   └─ formatText.js
 ```
 
 The components are nested as follows:
@@ -122,6 +120,8 @@ All states are managed locally using `useState`.
 ### Real-Time Input Handling
 
 User input and checkbox values are synced to the `content` state using event handlers. The content object includes properties like `userinput`, `nospace`, `limit`, and `maxlength`. All inputs are controlled, meaning their values are tied directly to the state and updated dynamically.
+
+<br />
 
 > User input → Updates `content` → Inputs receive `value`/`checked` from `content`
 
@@ -221,7 +221,7 @@ To keep the UI clean and uncluttered, only the top 5 character densities are dis
 - Clicking “See more” reveals the full list
 - Clicking “See less” collapses it back
 
-The open/closed state of the accordion is managed using the `isOpen` state. Whether the list needs to be split—and which button label to show—is determined dynamically based on the total number of items.
+The open/closed state of the accordion is managed using the `isOpen` state. Whether the list needs to be split—and which button label to show—is determined dynamically based on the total number of items and the `isOpen` state.
 
 #### Accordion Logic
 
@@ -257,7 +257,7 @@ const handleClick = () => {
 
 The app’s theme is controlled by the `isDark` state. Based on its value, a corresponding class (`dark-mode` or `light-mode`) is applied to the `<body>`, which handles global styling.
 
-Clicking the theme toggle icon updates isDark, triggering a re-render and applying the new theme class.
+Clicking the theme toggle icon updates `isDark`, triggering a re-render and applying the new theme class.
 
 #### Why Context Wasn’t Used for Theme Toggling
 
@@ -268,6 +268,8 @@ Since `isDark` is only used at the top level and doesn’t need to be accessed a
 ## Localization Setup
 
 This project implements a scalable structure that allows for easy future expansion into multiple languages without using a full i18n library.
+
+<br />
 
 ### UI Text in JSON
 
@@ -286,6 +288,8 @@ All display text is stored in `locales/en`.json. To add more languages, you can 
     "other": "< %d minutes"
   },
 ```
+
+<br />
 
 ### Text Formatting Utility
 
@@ -309,8 +313,17 @@ export function formatText(template, values, pluralRules = {}) {
 }
 ```
 
+<br />
+
 ### Passing UI Text Across the App with Context
 
-A `TextContext` is used to provide UI text throughout the app, allowing all components to access text content without prop drilling. Since UI text is typically fixed at release and rarely changes during a single session—especially in most localization projects—using context does not introduce unnecessary re-renders.
+A `TextContext` is used to provide UI text throughout the app, allowing all components to access text content without prop drilling. Since UI text is typically fixed at release and rarely changes during a single session, using context does not introduce unnecessary re-renders.
 
 This approach also improves maintainability by centralizing the management of UI text. It enables easier updates and scalability, such as supporting additional languages, without needing to change the component structure. Language support can be extended by enhancing how the app loads and manages language data.
+
+<br />
+
+## Continued Development
+
+- Use rem unit so the UI scales with the browser default font size
+- Persist the user’s theme preference using localStorage

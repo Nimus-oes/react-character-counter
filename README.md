@@ -18,6 +18,9 @@ This project is the first React application I built using the concept of **state
 - [State Management](#state-management)
 - [Key Feature Implementations](#key-feature-implementations)
 - [Localization Setup](#localization-setup)
+- [Continued Development](#continued-development)
+- [Resources](#resources)
+- [Author](#author)
 
 <br />
 
@@ -327,3 +330,28 @@ This approach also improves maintainability by centralizing the management of UI
 
 - Use rem unit so the UI scales with the browser default font size
 - Persist the user’s theme preference using localStorage
+
+<br />
+
+## Resources
+
+- [React Reference: `<textarea>`](https://react.dev/reference/react-dom/components/textarea) by React
+- [Application State Management with React](https://kentcdodds.com/blog/application-state-management-with-react) by Kent C. Dodds
+- [How to Use React Context effectively](https://kentcdodds.com/blog/how-to-use-react-context-effectively) by Kent C. Dodds
+- [Data Binding in React](https://www.joshwcomeau.com/react/data-binding/) by Josh Comeau
+- [Building a custom checkbox in React](https://blog.logrocket.com/building-custom-checkbox-react/) by
+  Ibadehin Mojeed
+- [How to Make Custom Accessible Checkboxes and Radio Buttons](https://webdesign.tutsplus.com/how-to-make-custom-accessible-checkboxes-and-radio-buttons--cms-32074t) by Sami Keijonen
+
+<br />
+
+## Author
+
+- [GitHub](https://github.com/Nimus-oes)
+- [Blog (English)](https://nimus.hashnode.dev/)
+- [Blog (Korean)](https://velog.io/@nimus/posts)
+- [Frontend Project Collection](https://github.com/Nimus-oes/frontend-project-collection)
+
+<br />
+
+This project is my solution to the Character Counter challenge from FrontendMentor.
